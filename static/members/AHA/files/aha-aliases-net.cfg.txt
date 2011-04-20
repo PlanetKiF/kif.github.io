@@ -1,0 +1,83 @@
+// aha-aliases-net.cfg : aliases for the net related stuff
+
+// ----------------- pushlatency switch
+
+alias aha_pl_a         "pushlatency 0;        aha_d_pl_a;   alias aha_pl_backup pushlatency 0;         alias aha_pl_switch aha_pl_b"
+alias aha_pl_b         "pushlatency -5.0528;  aha_d_pl_b;   alias aha_pl_backup pushlatency -5.0528;   alias aha_pl_switch aha_pl_c"
+alias aha_pl_c         "pushlatency -10.0528; aha_d_pl_c;   alias aha_pl_backup pushlatency -10.0528;  alias aha_pl_switch aha_pl_d"
+alias aha_pl_d         "pushlatency -15.0528; aha_d_pl_d;   alias aha_pl_backup pushlatency -15.0528;  alias aha_pl_switch aha_pl_e"
+alias aha_pl_e         "pushlatency -20.0528; aha_d_pl_e;   alias aha_pl_backup pushlatency -20.0528;  alias aha_pl_switch aha_pl_0"
+alias aha_pl_0         "pushlatency -25.0528; aha_d_pl_0;   alias aha_pl_backup pushlatency -25.0528;  alias aha_pl_switch aha_pl_1"
+alias aha_pl_1         "pushlatency -30.0528; aha_d_pl_1;   alias aha_pl_backup pushlatency -30.0528;  alias aha_pl_switch aha_pl_2"
+alias aha_pl_2         "pushlatency -35.0528; aha_d_pl_2;   alias aha_pl_backup pushlatency -35.0528;  alias aha_pl_switch aha_pl_3"
+alias aha_pl_3         "pushlatency -40.0528; aha_d_pl_3;   alias aha_pl_backup pushlatency -40.0528;  alias aha_pl_switch aha_pl_4"
+alias aha_pl_4         "pushlatency -45.0528; aha_d_pl_4;   alias aha_pl_backup pushlatency -45.0528;  alias aha_pl_switch aha_pl_5"
+alias aha_pl_5         "pushlatency -50.0528; aha_d_pl_5;   alias aha_pl_backup pushlatency -50.0528;  alias aha_pl_switch aha_pl_6"
+alias aha_pl_6         "pushlatency -55.0528; aha_d_pl_6;   alias aha_pl_backup pushlatency -55.0528;  alias aha_pl_switch aha_pl_7"
+alias aha_pl_7         "pushlatency -60.0528; aha_d_pl_7;   alias aha_pl_backup pushlatency -60.0528;  alias aha_pl_switch aha_pl_8"
+alias aha_pl_8         "pushlatency -65.0528; aha_d_pl_8;   alias aha_pl_backup pushlatency -65.0528;  alias aha_pl_switch aha_pl_9"
+alias aha_pl_9         "pushlatency -70.0528; aha_d_pl_9;   alias aha_pl_backup pushlatency -70.0528;  alias aha_pl_switch aha_pl_10"
+alias aha_pl_10        "pushlatency -75.0528; aha_d_pl_10;  alias aha_pl_backup pushlatency -75.0528;  alias aha_pl_switch aha_pl_11"
+alias aha_pl_11        "pushlatency -80.0528; aha_d_pl_11;  alias aha_pl_backup pushlatency -80.0528;  alias aha_pl_switch aha_pl_12"
+alias aha_pl_12        "pushlatency -85.0528; aha_d_pl_12;  alias aha_pl_backup pushlatency -85.0528;  alias aha_pl_switch aha_pl_13"
+alias aha_pl_13        "pushlatency -90.0528; aha_d_pl_13;  alias aha_pl_backup pushlatency -90.0528;  alias aha_pl_switch aha_pl_14"
+alias aha_pl_14        "pushlatency -95.0528; aha_d_pl_14;  alias aha_pl_backup pushlatency -95.0528;  alias aha_pl_switch aha_pl_15"
+alias aha_pl_15        "pushlatency -100.0528; aha_d_pl_15; alias aha_pl_backup pushlatency -100.0528; alias aha_pl_switch aha_pl_a"
+
+alias aha_pl_switch_d  "aha_pl_4"
+alias aha_pl_switch_r  "alias aha_pl_switch aha_pl_switch_d; aha_pl_switch"
+
+// ----------------- fps_max switch
+
+alias aha_fps_0         "fps_max 50.0528; aha_d_fps_0;  alias aha_fps_switch aha_fps_1"
+alias aha_fps_1         "fps_max 52.0528; aha_d_fps_1;  alias aha_fps_switch aha_fps_2"
+alias aha_fps_2         "fps_max 54.0528; aha_d_fps_2;  alias aha_fps_switch aha_fps_3"
+alias aha_fps_3         "fps_max 56.0528; aha_d_fps_3;  alias aha_fps_switch aha_fps_4"
+alias aha_fps_4         "fps_max 58.0528; aha_d_fps_4;  alias aha_fps_switch aha_fps_5"
+alias aha_fps_5         "fps_max 60.0528; aha_d_fps_5;  alias aha_fps_switch aha_fps_6"
+alias aha_fps_6         "fps_max 62.0528; aha_d_fps_6;  alias aha_fps_switch aha_fps_7"
+alias aha_fps_7         "fps_max 64.0528; aha_d_fps_7;  alias aha_fps_switch aha_fps_8"
+alias aha_fps_8         "fps_max 66.0528; aha_d_fps_8;  alias aha_fps_switch aha_fps_9"
+alias aha_fps_9         "fps_max 68.0528; aha_d_fps_9;  alias aha_fps_switch aha_fps_10"
+alias aha_fps_10        "fps_max 70.0528; aha_d_fps_10; alias aha_fps_switch aha_fps_11"
+alias aha_fps_11        "fps_max 72.0528; aha_d_fps_11; alias aha_fps_switch aha_fps_12"
+alias aha_fps_12        "fps_max 74.0528; aha_d_fps_12; alias aha_fps_switch aha_fps_13"
+alias aha_fps_13        "fps_max 76.0528; aha_d_fps_13; alias aha_fps_switch aha_fps_14"
+alias aha_fps_14        "fps_max 78.0528; aha_d_fps_14; alias aha_fps_switch aha_fps_15"
+alias aha_fps_15        "fps_max 80.0528; aha_d_fps_15; alias aha_fps_switch aha_fps_0"
+
+alias aha_fps_switch_d  "aha_fps_10"
+alias aha_fps_switch_r  "alias aha_fps_switch aha_fps_switch_d; aha_fps_switch"
+
+// ----------------- netcode toggle
+
+alias aha_netcode_on        "cl_lc 1; cl_lw 0; cl_nopred 1; cl_gaitestimation 0; pushlatency 0; aha_d_netcode_on;  alias aha_netcode_toggle aha_netcode_off"
+alias aha_netcode_off       "cl_lc 0; cl_lw 1; cl_nopred 0; cl_gaitestimation 1; aha_pl_backup; aha_d_netcode_off; alias aha_netcode_toggle aha_netcode_on"
+
+alias aha_netcode_toggle_d  "aha_netcode_off"
+alias aha_netcode_toggle_r  "alias aha_netcode_toggle aha_netcode_toggle_d; aha_netcode_toggle"
+
+// ----------------- connection toggle
+
+alias aha_connect_isdn      "rate 7001.0528; cl_updaterate 40; cl_cmdrate 40; aha_d_connect_isdn; alias aha_connect_toggle aha_connect_lan"
+alias aha_connect_lan       "rate 7999.0528; cl_updaterate 50; cl_cmdrate 50; aha_d_connect_lan;  alias aha_connect_toggle aha_connect_isdn"
+
+alias aha_connect_toggle_d  "aha_connect_isdn"
+alias aha_connect_toggle_r  "alias aha_connect_toggle aha_connect_toggle_d; aha_connect_toggle"
+
+// ----------------- netgraph switch
+
+alias aha_netgraph_1         "net_graph 2; cl_showfps 0; alias aha_netgraph_switch aha_netgraph_2"
+alias aha_netgraph_2         "net_graph 1; cl_showfps 0; alias aha_netgraph_switch aha_netgraph_3"
+alias aha_netgraph_3         "net_graph 3; cl_showfps 0; alias aha_netgraph_switch aha_netgraph_4"
+alias aha_netgraph_4         "net_graph 0; cl_showfps 1; alias aha_netgraph_switch aha_netgraph_off"
+alias aha_netgraph_off       "net_graph 0; cl_showfps 0; alias aha_netgraph_switch aha_netgraph_1"
+
+alias aha_netgraph_switch_d  "aha_netgraph_off"
+alias aha_netgraph_switch_r  "alias aha_netgraph_switch aha_netgraph_switch_d; aha_netgraph_switch"
+
+// ----------------- reset defaults
+
+alias aha_reset_net  "aha_pl_switch_r; aha_fps_switch_r; aha_netcode_toggle_r; aha_connect_toggle_r; aha_netgraph_switch_r"
+
+// ----------------------------------END

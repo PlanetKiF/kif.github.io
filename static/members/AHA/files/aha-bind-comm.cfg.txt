@@ -1,0 +1,36 @@
+// aha-bind-comm.cfg : bindings while in communication mode
+
+unbindall
+exec aha-bind-default.cfg
+aha_dv_1
+echo | 1 yes ___ | 2 no ____ | 3 e spot_ | 4 fire _ | 5 need _ | 6 e down | 7 s clear |* y ingame
+echo | q coverme | w followme  | e getin _ | r fallback | t gogogo | z storm _ | _______ |* x buy
+echo | a stick __ | s takepoint | d holdpos | f regroup | g iminpos | h blow _ | _______ |* c comm
+echo | ________ | _________ | _______ | _______ | ________ | _______ | _______ |* v netop
+aha_dv_0
+
+// -----------------
+
+bind "1"  "aha_r_roger;            aha_eabc"
+bind "2"  "aha_r_negative;         aha_eabc"
+bind "3"  "aha_r_enemyspotted;     aha_eabc"
+bind "4"  "aha_r_takingfire;       aha_eabc"
+bind "5"  "aha_r_needbackup;       aha_eabc"
+bind "6"  "aha_r_enemydown;        aha_eabc"
+bind "7"  "aha_r_sectorclear;      aha_eabc"
+
+bind "q"  "aha_r_coverme;          aha_eabc"
+bind "w"  "aha_r_followme;         aha_eabc"
+bind "e"  "aha_r_getinposition;    aha_eabc"
+bind "r"  "aha_r_fallback;         aha_eabc"
+bind "t"  "aha_r_gogogo;           aha_eabc"
+bind "y"  "aha_r_stormthefront;    aha_eabc"
+
+bind "a"  "aha_r_sticktogether;    aha_eabc"
+bind "s"  "aha_r_youtakethepoint;  aha_eabc"
+bind "d"  "aha_r_holdthisposition; aha_eabc"
+bind "f"  "aha_r_regroupteam;      aha_eabc"
+bind "g"  "aha_r_iminposition;     aha_eabc"
+bind "h"  "aha_r_shesgonnablow;    aha_eabc"
+
+// ---------------------------------- END

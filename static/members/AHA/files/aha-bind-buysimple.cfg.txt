@@ -1,0 +1,20 @@
+// aha-bind-buysimple.cfg : simple bindings for the buy phase
+
+unbindall
+exec aha-bind-default.cfg
+aha_dv_1
+echo | _________ |* y combat
+echo | _________ |* x buy
+echo | _________ |* c comm
+echo | b buy ___ |* v netop
+aha_dv_0
+
+// -----------------
+
+buy
+
+// -----------------
+
+bind "b"  "buy"
+
+// ---------------------------------- END

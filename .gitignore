@@ -1,0 +1,20 @@
+# Can ignore specific files
+.DS_Store
+ehthumbs.db
+Thumbs.db
+#Icon?
+
+# Use wildcards as well
+*~
+*.swp
+*.pyc
+
+# Can also ignore all directories and files in a directory.
+tmp/**/* 
+
+#pycharm host specific
+kif.iws
+.idea/workspace.xml
+.idea/kif.iml
+.idea/libraries/Google_App_Engine_SDK.xml
+.idea/libraries/Google_App_Engine_SDK2.xml

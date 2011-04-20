@@ -1,0 +1,144 @@
+<html>
+<head>
+<title>How to ... create your own spray logos</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<style type="text/css">
+<!--
+-->
+</style>
+</head>
+
+<body bgcolor="#000000" leftmargin="20" topmargin="20">
+<table border="0" cellpadding="10" cellspacing="10" align="center" width="66%" bordercolor="#999999">
+  <tr> 
+    <td colspan="3" bgcolor="#CCCCCC"> 
+      <div align="center"> 
+        <p><font face="Verdana, Arial, Helvetica, sans-serif" size="+3" color="#333333"><b><font size="+2" color="#FF0000">How 
+          to create your own spray logos...</font></b></font></p>
+        <p><b><font face="Verdana, Arial, Helvetica, sans-serif" color="#000000">by 
+          [KiF]JoBoot/[KiF]AHA<br>
+          04/2001</font></b></p>
+      </div>
+    </td>
+    <td width="125" bgcolor="#CCCCCC"><img src="spray02.jpg" width="137" height="139"></td>
+  </tr>
+  <tr> 
+    <td colspan="4" height="70" valign="top" bgcolor="#CCCCCC"> 
+      <p align="left"><b><font size="+1">Programs you need:</font></b></p>
+      <ol>
+        <li>A paint program to create a BMP (try an evaluation copy of <a href="http://www.jasc.com/" target="_blank">JASC 
+          Paint Shop Pro</a>).</li>
+        <li>To convert the BMP to a WAD you can use the original <a href="http://www.bluesnews.com/files/half-life/sdk/texturesdk.shtml" target="_blank">TextureSDK</a> 
+          or <a href="../../members/AHA/files/colored_logos.zip">this version</a>, 
+          which is the TextureSDK stripped down to the essential files (we recommend 
+          the latter, for which we'll explain the process).</li>
+      </ol>
+      <p>If you want it the really easy way then you can use the program <a href="http://www.planethalflife.com/hlcsm/" target="_blank">HLCSM</a>. 
+        It faciliates the conversion from any image to WAD by some mouse clicks... 
+        but the results are not quite satisfying if you need to resize/cut the 
+        image, reduce the color depth or want to use transparency.</p>
+    </td>
+  </tr>
+  <tr> 
+    <td colspan="4" height="70" valign="top" bgcolor="#CCCCCC"> 
+      <p align="left"><font color="#333333"><b><font size="+1">Size of the image: 
+        </font></b></font></p>
+      <ol>
+        <li><font color="#333333">The image <i><b>must not</b></i> be greater 
+          that 12.287 Pixel</font></li>
+        <li><font color="#333333">Width and height, each <i><b>must be</b></i> 
+          a multiple of 16</font></li>
+        <li><font color="#333333">W</font>e are extreme fancy and provide a list 
+          of all possible maximal dimensions (including empty PaintShopPro templates 
+          for convenient download) right <a href="table.html">here</a>!</li>
+      </ol>
+    </td>
+  </tr>
+  <tr> 
+    <td colspan="4" height="150" valign="top" bgcolor="#CCCCCC"> 
+      <div align="left"> 
+        <p><font color="#CCCCCC"><font color="#000000"><b><font size="+1">Create 
+          your own logo:</font></b></font></font></p>
+      </div>
+      <ol>
+        <li> 
+          <div align="left">Create your cool logo with any technique in any format 
+            and with 16.7 million colors. If you use transparency, then use either 
+            1 bit transparency or choose middle grey (#808080) as background (because 
+            the finished image will have 1 bit transparency with blue (#0000FF) 
+            as transparent background)</div>
+        </li>
+        <li>After you've done that, get your image's height:width-ratio and get 
+          the template with the best fitting ratio from <a href="table.html">here</a>.</li>
+        <li>Resize (<b>PSP</b>: Shift+S) and cut (<b>PSP</b>: Image &gt; Canvas 
+          Size) your image, so that it fits into the template.</li>
+        <li>Decrease the color depth to 256 colors. <b>PSP</b>: Shortcut: Shift+Ctrl+3. 
+          Use: Optimized Octree, Error diffusion &amp; Reduce color bleeding (NOT 
+          Include Windows' colors)</li>
+        <li>Edit the color palette (<b>PSP</b>: Shift+P) to set the <b>last</b> 
+          color of the palette to blue (#0000FF). <b>All</b> pixels having this 
+          color in your image appear transparent in the game.</li>
+        <li>Save the image as BMP.</li>
+      </ol>
+    </td>
+  </tr>
+  <tr> 
+    <td colspan="4" height="150" valign="top" bgcolor="#CCCCCC"> 
+      <p><b><font size="+1">Convert your logo to pldecal.wad:</font></b></p>
+      <p>The <a href="../../members/AHA/files/colored_logos.zip">colored-logo.zip</a> 
+        consists of three files: bmp2wad.bat, qlumpy.exe and ls2wad.exe, with 
+        bmp2wad.bat using the exe files in the following way: </p>
+      <p><font face="Courier New, Courier, mono" size="-1">set hlpath=[path to 
+        your half-life]<br>
+        </font><font face="Courier New, Courier, mono" size="-1">makels . pldecal 
+        pldecal.ls<br>
+        ls2wad pldecal.ls<br>
+        del pldecal.ls<br>
+        copy pldecal.wad %hlpath%\cstrike</font><br>
+        <font face="Courier New, Courier, mono" size="-1">copy pldecal.wad %hlpath%\flf</font><br>
+        <font face="Courier New, Courier, mono" size="-1">copy pldecal.wad %hlpath%\tfc</font><br>
+        <font face="Courier New, Courier, mono" size="-1"></font><font face="Courier New, Courier, mono" size="-1">move 
+        pldecal.wad %hlpath%\valve<br>
+        </font> </p>
+      <ul>
+        <li>The first line sets the path to the half-life directory.</li>
+        <li>The second line puts ALL BMPs in the current directory into one pldecal.ls 
+          file (if you have more than one BMP in the current directory then the 
+          resuting pldecal.wad is f*cked up)</li>
+        <li>The third line generates the pldecal.wad (out of the pldecal.ls).</li>
+        <li>The forth line deletes the pldecal.ls (because it is not needed anymore).</li>
+        <li>The next three lines copy the pldecal.wad to the cstrike, flf and 
+          tfc directories.</li>
+        <li>The last line moves the pldecal.wad to the valve directory.</li>
+      </ul>
+      <p>What you'll have to do once is this:</p>
+      <ol>
+        <li>Extract these files to a empty directory (i.e. create one).</li>
+        <li>Edit the first line to something like <font size="-1">'</font><font face="Courier New, Courier, mono" size="-1">set 
+          hlpath=c:\sierra\half-life</font>'<br>
+        </li>
+        <li>If you want to use your logo in more or less mods add or delete the 
+          appropriate lines.</li>
+      </ol>
+      <p>What you'll have to do everytime you want to change your logo is this:</p>
+      <ol>
+        <li>Copy or move your BMP file there (it won't get harmed).</li>
+        <li>Execute the BAT.</li>
+      </ol>
+      <p>That's it.<br>
+      </p>
+      <p>DON'T go to the 'customize' menu to change your name or select a logo. 
+        If you do go into the customization screen, the pldecal.wad will be overwritten 
+        by a normal style spraypaint, and you'll have to copy the pldecal.wad 
+        again.</p>
+    </td>
+  </tr>
+  <tr bgcolor="#000000" valign="middle"> 
+    <td colspan="4" height="150"> 
+      <div align="center"><a href="http://www.planet-kif.de" target="_top"><img src="../../banner/banner02.png" width="102" height="75" border="0"></a></div>
+    </td>
+  </tr>
+</table>
+<p align="center">&nbsp;</p>
+</body>
+</html>

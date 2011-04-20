@@ -1,0 +1,41 @@
+// aha-aliases-hud.cfg : aliases for hud related stuff
+
+// ----------------- developer toggle
+
+alias aha_dv_00        "developer 0"
+
+alias aha_dv_on        "alias aha_dv_0 aha_dv_1;  aha_d_dv_on;  alias aha_dv_toggle aha_dv_off"
+alias aha_dv_off       "alias aha_dv_0 aha_dv_00; aha_d_dv_off; alias aha_dv_toggle aha_dv_on"
+
+alias aha_dv_toggle_d  "aha_dv_off"
+alias aha_dv_toggle_r  "alias aha_dv_toggle aha_dv_toggle_d; aha_dv_toggle"
+
+// ----------------- radar toggle
+
+alias aha_radar_on        "drawradar; aha_d_radar_on;  alias aha_radar_toggle aha_radar_off"
+alias aha_radar_off       "hideradar; aha_d_radar_off; alias aha_radar_toggle aha_radar_on"
+
+alias aha_radar_toggle_d  "aha_radar_on"
+alias aha_radar_toggle_r  "alias aha_radar_toggle aha_radar_toggle_d; aha_radar_toggle"
+
+// ----------------- vgui toggle
+
+alias aha_vgui_on        "setinfo vgui_menus 1; aha_d_vgui_on;  alias aha_vgui_toggle aha_vgui_off"
+alias aha_vgui_off       "setinfo vgui_menus 0; aha_d_vgui_off; alias aha_vgui_toggle aha_vgui_on"
+
+alias aha_vgui_toggle_d  "aha_vgui_off"
+alias aha_vgui_toggle_r  "alias aha_vgui_toggle aha_vgui_toggle_d; aha_vgui_toggle"
+
+// ----------------- bob toggle
+
+alias aha_bob_on        "cl_bob 0.005; cl_bobcycle 0.6; cl_bobup 0.5; aha_d_bob_on;  alias aha_bob_toggle aha_bob_off"
+alias aha_bob_off       "cl_bob 0;     cl_bobcycle 0.6; cl_bobup 0;   aha_d_bob_off; alias aha_bob_toggle aha_bob_on"
+
+alias aha_bob_toggle_d  "aha_bob_on"
+alias aha_bob_toggle_r  "alias aha_bob_toggle aha_bob_toggle_d; aha_bob_toggle"
+
+// ----------------- reset defaults
+
+alias aha_reset_hud  "aha_dv_toggle_r; aha_radar_toggle_r; aha_vgui_toggle_r; aha_bob_toggle_r"
+
+// ---------------------------------- END

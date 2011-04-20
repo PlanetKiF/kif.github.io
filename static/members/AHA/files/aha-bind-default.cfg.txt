@@ -1,0 +1,33 @@
+// aha-bind-default.cfg : bindings that are always valid
+
+aha_cl
+
+bind "TAB"      "+showscores"
+bind "PAUSE"    "pause"
+
+bind "`"        "toggleconsole"
+bind "~"        "toggleconsole"
+
+bind "z"        "exec aha-bind-combat.cfg"
+bind "x"        "exec aha-bind-buy.cfg"
+bind "c"        "exec aha-bind-comm.cfg"
+bind "v"        "exec aha-bind-net.cfg"
+
+bind "ENTER"    "+use"
+bind "SPACE"    "aha_cl"
+bind "KP_PLUS"  "aha_reset_hud+move"
+
+bind "HOME"     "snapshot"
+
+bind "1"        "slot1"
+bind "2"        "slot2"
+bind "3"        "slot3"
+bind "4"        "slot4"
+bind "5"        "slot5"
+bind "6"        "slot6"
+bind "7"        "slot7"
+bind "8"        "slot8"
+bind "9"        "slot9"
+bind "0"        "slot10"
+
+// ---------------------------------- END

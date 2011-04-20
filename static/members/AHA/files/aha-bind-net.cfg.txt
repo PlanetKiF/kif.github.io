@@ -1,0 +1,28 @@
+// aha-bind-net.cfg : bindings for net related stuff
+
+unbindall
+exec aha-bind-default.cfg
+aha_dv_1
+echo | 1 netgraph __ | 2 netcode | 3 listmaps __ |* y combat
+echo | q pushlatency | w connect | e listplayers_ |* x buy
+echo | a fps_max __ | ________ | ___________ |* c comm
+echo | ___________ | ________ | ___________ |* v netop
+aha_dv_0
+
+// -----------------
+
+aha_netgraph_switch_r
+
+// -----------------
+
+bind "1"  "aha_netgraph_switch"
+bind "q"  "aha_pl_switch"
+bind "a"  "aha_fps_switch"
+
+bind "2"  "aha_netcode_toggle"
+bind "w"  "aha_connect_toggle"
+
+bind "3"  "listmaps; toggleconsole"
+bind "e"  "listplayers; toggleconsole"
+
+// ----------------------------------END

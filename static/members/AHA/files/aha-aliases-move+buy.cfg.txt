@@ -1,0 +1,106 @@
+// aha-aliases-move+buy.cfg : aliases for movement and for the buy phase
+
+// ----------------- duckjump toggle
+
+alias +aha_duckjump          "+jump; wait; +duck; -jump"
+alias -aha_duckjump          "-duck"
+
+alias aha_duckjump_on        "alias +aha_jump +aha_duckjump; alias -aha_jump -aha_duckjump; aha_d_duckjump_on;  alias aha_duckjump_toggle aha_duckjump_off"
+alias aha_duckjump_off       "alias +aha_jump +jump;         alias -aha_jump -jump;         aha_d_duckjump_off; alias aha_duckjump_toggle aha_duckjump_on"
+
+alias aha_duckjump_toggle_d  "aha_duckjump_on"
+alias aha_duckjump_toggle_r  "alias aha_duckjump_toggle aha_duckjump_toggle_d; aha_duckjump_toggle"
+
+// ----------------- duck toggle
+
+alias aha_duck_on        "+duck; aha_d_duck_on;  alias aha_duck_toggle aha_duck_off"
+alias aha_duck_off       "-duck; aha_d_duck_off; alias aha_duck_toggle aha_duck_on"
+
+alias aha_duck_toggle_d  "aha_duck_off"
+alias aha_duck_toggle_r  "alias aha_duck_toggle aha_duck_toggle_d; aha_duck_toggle"
+
+// ----------------- walk toggle
+
+alias aha_walk_on        "+speed; aha_d_walk_on;  alias aha_walk_toggle aha_walk_off"
+alias aha_walk_off       "-speed; aha_d_walk_off; alias aha_walk_toggle aha_walk_on"
+
+alias aha_walk_toggle_d  "aha_walk_off"
+alias aha_walk_toggle_r  "alias aha_walk_toggle aha_walk_toggle_d; aha_walk_toggle"
+
+// ----------------- light (morsing)
+
+alias +aha_light  "impulse 100"
+alias -aha_light  "impulse 100"
+
+// ----------------- reset move defaults
+
+alias aha_reset_move  "aha_duckjump_toggle_r; aha_duck_toggle_r; aha_walk_toggle_r"
+
+// ---------------------------------- BUY
+
+// full ammo
+alias aha_b_primaryammo   "buyammo1; buyammo1; buyammo1; buyammo1; buyammo1; buyammo1"
+alias aha_b_secondammo    "buyammo2; buyammo2; buyammo2; buyammo2; buyammo2; buyammo2"
+
+// handguns (1)
+alias aha_b_usp           "buy; menuselect 1; menuselect 1"
+alias aha_b_glock18       "buy; menuselect 1; menuselect 2"
+alias aha_b_deagle        "buy; menuselect 1; menuselect 3"
+alias aha_b_p228          "buy; menuselect 1; menuselect 4"
+alias aha_b_elite         "buy; menuselect 1; menuselect 5"   // t only
+alias aha_b_fn57          "buy; menuselect 1; menuselect 6"   // ct only
+
+// shotguns (2)
+alias aha_b_m3            "buy; menuselect 2; menuselect 1"
+alias aha_b_xm1014        "buy; menuselect 2; menuselect 2"
+
+// sub-machine guns (3)
+alias aha_b_mp5           "buy; menuselect 3; menuselect 1"
+alias aha_b_tmp           "buy; menuselect 3; menuselect 2"   // ct only
+alias aha_b_p90           "buy; menuselect 3; menuselect 3"
+alias aha_b_mac10         "buy; menuselect 3; menuselect 4"   // t only
+alias aha_b_ump           "buy; menuselect 3; menuselect 5"
+
+// rifles (4)
+alias aha_b_ak47          "buy; menuselect 4; menuselect 1"   // t only
+alias aha_b_sg552         "buy; menuselect 4; menuselect 2"   // t only
+alias aha_b_m4            "buy; menuselect 4; menuselect 3"   // ct only
+alias aha_b_aug           "buy; menuselect 4; menuselect 4"   // ct only
+alias aha_b_scout         "buy; menuselect 4; menuselect 5"
+alias aha_b_awp           "buy; menuselect 4; menuselect 6"
+alias aha_b_g3sg1         "buy; menuselect 4; menuselect 7"
+alias aha_b_sg550         "buy; menuselect 4; menuselect 8"   // ct only
+
+// mashine gun (5)
+alias aha_b_para249       "buy; menuselect 5; menuselect 1"
+
+// items
+alias aha_b_vest          "buyequip; menuselect 1"
+alias aha_b_vesthelmet    "buyequip; menuselect 2"
+alias aha_b_defusekit     "buyequip; menuselect 6"
+alias aha_b_nvg           "buyequip; menuselect 7"
+
+// grenades
+alias aha_b_hegrenade     "buyequip; menuselect 4"
+alias aha_b_flashbang     "buyequip; menuselect 3"
+alias aha_b_smokegrenade  "buyequip; menuselect 5"
+
+// ----------------- sniper buy 'toggle'
+
+alias aha_b_sniper1   "aha_b_sg550; aha_b_primaryammo; alias aha_b_sniper aha_b_sniper2"
+alias aha_b_sniper2   "aha_b_awp; aha_b_primaryammo"
+
+alias aha_b_sniper_d  "aha_b_sniper1"
+alias aha_b_sniper_r  "alias aha_b_sniper aha_b_sniper1"
+
+// ----------------- grenade buy switch
+
+alias aha_b_hegrenade_help     "aha_b_hegrenade;    alias aha_b_grenade_switch aha_b_flashbang_help1"
+alias aha_b_flashbang_help1    "aha_b_flashbang;    alias aha_b_grenade_switch aha_b_flashbang_help2"
+alias aha_b_flashbang_help2    "aha_b_flashbang;    alias aha_b_grenade_switch aha_b_smokegrenade_help"
+alias aha_b_smokegrenade_help  "aha_b_smokegrenade; alias aha_b_grenade_switch aha_b_hegrenade_help"
+
+alias aha_b_grenade_switch_d   "aha_b_hegrenade_help"
+alias aha_b_grenade_switch_r   "alias aha_b_grenade_switch aha_b_grenade_switch_d"
+
+// ---------------------------------- END

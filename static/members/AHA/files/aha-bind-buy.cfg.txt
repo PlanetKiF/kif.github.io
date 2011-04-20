@@ -1,0 +1,40 @@
+// aha-bind-buy.cfg : bindings for the buy phase
+
+unbindall
+exec aha-bind-default.cfg
+aha_dv_1
+echo | 1 deagle | 2 mp5 | 3 ak47 / colt_ | 4 vest + helm | 5 pri ammo |* y combat
+echo | q eli/57 | w p90 | e sg552 / aug | r grenade* __ | t sec ammo |* x buy
+echo | ______ | s ump | d sg550 / awp | f vest ______ | g defuse_ |* c comm
+echo | ______ | _____ | ____________ | ___________ | b buy ___ |* v netop
+aha_dv_0
+
+// -----------------
+
+aha_b_sniper_r
+aha_b_grenade_switch_r
+
+// -----------------
+
+bind "1"  "aha_b_deagle; aha_b_secondammo"
+bind "q"  "aha_b_elite; aha_b_fn57; aha_b_secondammo"
+
+bind "2"  "aha_b_mp5; aha_b_primaryammo"
+bind "w"  "aha_b_p90; aha_b_primaryammo"
+bind "s"  "aha_b_ump; aha_b_primaryammo"
+
+bind "3"  "aha_b_ak47; aha_b_m4; aha_b_primaryammo"
+bind "e"  "aha_b_sg552; aha_b_aug; aha_b_primaryammo"
+bind "d"  "aha_b_sniper"
+
+bind "4"  "aha_b_vesthelmet"
+bind "r"  "aha_b_grenade_switch"
+bind "f"  "aha_b_vest"
+
+bind "5"  "aha_b_primaryammo"
+bind "t"  "aha_b_secondammo"
+bind "g"  "aha_b_defusekit"
+
+bind "b"  "exec aha-bind-buysimple.cfg"
+
+// ---------------------------------- END

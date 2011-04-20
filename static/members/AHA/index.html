@@ -1,0 +1,236 @@
+<html>
+<head>
+<title>AHA</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<script language="JavaScript">
+<!--
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v3.0
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document); return x;
+}
+
+function MM_nbGroup(event, grpName) { //v3.0
+  var i,img,nbArr,args=MM_nbGroup.arguments;
+  if (event == "init" && args.length > 2) {
+    if ((img = MM_findObj(args[2])) != null && !img.MM_init) {
+      img.MM_init = true; img.MM_up = args[3]; img.MM_dn = img.src;
+      if ((nbArr = document[grpName]) == null) nbArr = document[grpName] = new Array();
+      nbArr[nbArr.length] = img;
+      for (i=4; i < args.length-1; i+=2) if ((img = MM_findObj(args[i])) != null) {
+        if (!img.MM_up) img.MM_up = img.src;
+        img.src = img.MM_dn = args[i+1];
+        nbArr[nbArr.length] = img;
+    } }
+  } else if (event == "over") {
+    document.MM_nbOver = nbArr = new Array();
+    for (i=1; i < args.length-1; i+=3) if ((img = MM_findObj(args[i])) != null) {
+      if (!img.MM_up) img.MM_up = img.src;
+      img.src = (img.MM_dn && args[i+2]) ? args[i+2] : args[i+1];
+      nbArr[nbArr.length] = img;
+    }
+  } else if (event == "out" ) {
+    for (i=0; i < document.MM_nbOver.length; i++) {
+      img = document.MM_nbOver[i]; img.src = (img.MM_dn) ? img.MM_dn : img.MM_up; }
+  } else if (event == "down") {
+    if ((nbArr = document[grpName]) != null)
+      for (i=0; i < nbArr.length; i++) { img=nbArr[i]; img.src = img.MM_up; img.MM_dn = 0; }
+    document[grpName] = nbArr = new Array();
+    for (i=2; i < args.length-1; i+=2) if ((img = MM_findObj(args[i])) != null) {
+      if (!img.MM_up) img.MM_up = img.src;
+      img.src = img.MM_dn = args[i+1];
+      nbArr[nbArr.length] = img;
+  } }
+}
+//-->
+</script>
+</head>
+
+<body bgcolor="#000000" leftmargin="20" topmargin="20" onLoad="MM_preloadImages('/members/AHA/files/files-down.png','/members/AHA/files/files-over.png','/members/AHA/socialstuff/fun_down.png','/members/AHA/socialstuff/fun_over.png')">
+<table border="0" cellpadding="0" cellspacing="0" align="center" width="506">
+  <tr> 
+    <td colspan="4"> 
+      <div align="center"><img src="aha-tag.png" width="302" height="57"></div>
+    </td>
+  </tr>
+  <tr align="center" valign="middle"> 
+    <td colspan="4"> 
+      <div align="center">
+        <table width="100%" border="0">
+          <tr>
+            <td>
+              <div align="center"><font color="#FFFFFF" face="Verdana, Arial, Helvetica, sans-serif" size="3"><img src="aha-logo.png" width="96" height="96" align="middle"></font></div>
+            </td>
+            <td>
+              <div align="center"><img src="aha-logo-color.png" width="264" height="96"></div>
+            </td>
+          </tr>
+        </table>
+        
+        <table border="0" cellpadding="0" cellspacing="0">
+          <tr> 
+            <td><a href="files/index.html" onClick="MM_nbGroup('down','group1','files','/members/AHA/files/files-down.png',1)" onMouseOver="MM_nbGroup('over','files','/members/AHA/files/files-over.png','/members/AHA/files/files-down.png',1)" onMouseOut="MM_nbGroup('out')"><img name="files" src="files/files-up.png" border="0" onLoad=""></a></td>
+          </tr>
+          <tr>
+            <td><a href="socialstuff/index.html" onClick="MM_nbGroup('down','group1','fun','/members/AHA/socialstuff/fun_down.png',1)" onMouseOver="MM_nbGroup('over','fun','/members/AHA/socialstuff/fun_over.png','/members/AHA/socialstuff/fun_down.png',1)" onMouseOut="MM_nbGroup('out')"><img name="fun" src="socialstuff/fun_up.png" border="0" onLoad=""></a></td>
+          </tr>
+        </table>
+      </div>
+    </td>
+  </tr>
+  <tr> 
+    <td width="160" height="30"> 
+      <div align="right"><font color="#FFFFFF" face="Verdana, Arial, Helvetica, sans-serif" size="3">email</font></div>
+    </td>
+    <td width="20" height="30"> 
+      <div align="left"><span class="planet-kif"><span class="planet-kif"><font color="#FFFFFF"><font face="Arial, Helvetica, sans-serif"><font face="Times New Roman, Times, serif"><font face="Courier New, Courier, mono"><font face="Georgia, Times New Roman, Times, serif"><font face="Verdana, Arial, Helvetica, sans-serif"><font face="Verdana, Arial, Helvetica, sans-serif"><font face="Verdana, Arial, Helvetica, sans-serif"><font face="Verdana, Arial, Helvetica, sans-serif"><font face="Verdana, Arial, Helvetica, sans-serif"><font color="#FFFFFF"><font size="3"><font size="3"></font></font></font></font></font></font></font></font></font></font></font></font></font></span></span></div>
+    </td>
+    <td colspan="2" height="30"><font color="#FFFFFF" face="Verdana, Arial, Helvetica, sans-serif" size="3"><a href="mailto:AHA@planet-kif.de">AHA@planet-kif.de</a></font></td>
+  </tr>
+  <tr> 
+    <td width="160" rowspan="3"> 
+      <div align="right"><font color="#FFFFFF" face="Verdana, Arial, Helvetica, sans-serif" size="3">ICQ</font></div>
+    </td>
+    <td width="20" rowspan="3"><font color="#FFFFFF" face="Verdana, Arial, Helvetica, sans-serif" size="3"></font></td>
+    <td colspan="2"> 
+      <div align="left"><font size="2" color="#FFFFFF" face="Verdana, Arial, Helvetica, sans-serif">current 
+        status:</font> <font color="#FFFFFF" face="Verdana, Arial, Helvetica, sans-serif" size="2"><img src="http://wwp.icq.com/scripts/online.dll?icq=9921147&img=1" width="44" height="14"></font></div>
+    </td>
+  </tr>
+  <tr> 
+    <td colspan="2"><font size="2" color="#FFFFFF" face="Verdana, Arial, Helvetica, sans-serif">message 
+      by ICQ: <a href="http://msg.mirabilis.com/scripts/contact.dll?msgto=9921147">9921147</a></font></td>
+  </tr>
+  <tr> 
+    <td colspan="2"><font size="2" color="#FFFFFF" face="Verdana, Arial, Helvetica, sans-serif">message 
+      by email: <a href="mailto:9921147@pager.icq.com">9921147@pager.icq.com</a></font></td>
+  </tr>
+  <tr> 
+    <td width="160"> 
+      <div align="right"><font color="#FFFFFF"><font face="Arial, Helvetica, sans-serif"><font face="Times New Roman, Times, serif"><font face="Courier New, Courier, mono"><font face="Georgia, Times New Roman, Times, serif"><font face="Verdana, Arial, Helvetica, sans-serif"><font face="Verdana, Arial, Helvetica, sans-serif"><font face="Verdana, Arial, Helvetica, sans-serif"><font face="Verdana, Arial, Helvetica, sans-serif"><font face="Verdana, Arial, Helvetica, sans-serif"><font color="#FFFFFF"><font size="3"><font size="3"></font></font></font></font></font></font></font></font></font></font></font></font></font></div>
+    </td>
+    <td colspan="3" height="15"><font color="#FFFFFF" face="Verdana, Arial, Helvetica, sans-serif" size="3"></font></td>
+  </tr>
+  <tr> 
+    <td width="160"> 
+      <div align="right"><font color="#FFFFFF" face="Verdana, Arial, Helvetica, sans-serif" size="3">age</font></div>
+    </td>
+    <td width="20"><font color="#FFFFFF" face="Verdana, Arial, Helvetica, sans-serif" size="3"></font></td>
+    <td colspan="2"> 
+      <div align="left"><font color="#FFFFFF" face="Verdana, Arial, Helvetica, sans-serif" size="3">27</font></div>
+    </td>
+  </tr>
+  <tr> 
+    <td width="160"> 
+      <div align="right"><font color="#FFFFFF" face="Verdana, Arial, Helvetica, sans-serif" size="3">member 
+        since</font></div>
+    </td>
+    <td width="20"><font color="#FFFFFF" face="Verdana, Arial, Helvetica, sans-serif" size="3"></font></td>
+    <td colspan="2"> 
+      <div align="left"><font color="#FFFFFF" face="Verdana, Arial, Helvetica, sans-serif" size="3">03/2000</font></div>
+    </td>
+  </tr>
+  <tr> 
+    <td width="160"> 
+      <div align="right"><font color="#FFFFFF"><font face="Arial, Helvetica, sans-serif"><font face="Times New Roman, Times, serif"><font face="Courier New, Courier, mono"><font face="Georgia, Times New Roman, Times, serif"><font face="Verdana, Arial, Helvetica, sans-serif"><font face="Verdana, Arial, Helvetica, sans-serif"><font face="Verdana, Arial, Helvetica, sans-serif"><font face="Verdana, Arial, Helvetica, sans-serif"><font face="Verdana, Arial, Helvetica, sans-serif"><font color="#FFFFFF"><font size="3"><font size="3"></font></font></font></font></font></font></font></font></font></font></font></font></font></div>
+    </td>
+    <td colspan="3" height="15"><font color="#FFFFFF" face="Verdana, Arial, Helvetica, sans-serif" size="3"></font></td>
+  </tr>
+  <tr> 
+    <td width="160"> 
+      <div align="right"><font color="#FFFFFF"><font face="Arial, Helvetica, sans-serif"><font face="Times New Roman, Times, serif"><font face="Courier New, Courier, mono"><font face="Georgia, Times New Roman, Times, serif"><font face="Verdana, Arial, Helvetica, sans-serif"><font face="Verdana, Arial, Helvetica, sans-serif"><font face="Verdana, Arial, Helvetica, sans-serif"><font face="Verdana, Arial, Helvetica, sans-serif"><font face="Verdana, Arial, Helvetica, sans-serif"><font color="#FFFFFF"><font size="3"><font size="2"><font size="3"><font size="2"></font></font></font></font></font></font></font></font></font></font></font></font></font></font></font></div>
+    </td>
+    <td width="20"><font color="#FFFFFF" face="Verdana, Arial, Helvetica, sans-serif" size="2"></font></td>
+    <td width="160"> 
+      <div align="left"><font size="2" color="#FFFFFF" face="Verdana, Arial, Helvetica, sans-serif">as 
+        counter</font></div>
+    </td>
+    <td width="160"> 
+      <div align="left"><font size="2" color="#FFFFFF" face="Verdana, Arial, Helvetica, sans-serif">as 
+        terror</font></div>
+    </td>
+  </tr>
+  <tr> 
+    <td width="160"> 
+      <div align="right"><font color="#FFFFFF" face="Verdana, Arial, Helvetica, sans-serif" size="3">favourite 
+        weapon</font></div>
+    </td>
+    <td width="20"><font color="#FFFFFF" face="Verdana, Arial, Helvetica, sans-serif" size="3"></font></td>
+    <td width="160"> 
+      <div align="left"><font color="#FFFFFF" face="Verdana, Arial, Helvetica, sans-serif" size="3">Colt 
+        M4A1</font></div>
+    </td>
+    <td width="160"> 
+      <div align="left"><font color="#FFFFFF" face="Verdana, Arial, Helvetica, sans-serif" size="3">SG-552</font></div>
+    </td>
+  </tr>
+  <tr> 
+    <td width="160"> 
+      <div align="right"><font color="#FFFFFF" face="Verdana, Arial, Helvetica, sans-serif" size="3">favourite 
+        skin</font></div>
+    </td>
+    <td width="20"><font color="#FFFFFF" face="Verdana, Arial, Helvetica, sans-serif" size="3"></font></td>
+    <td width="160"> 
+      <div align="left"><font color="#FFFFFF" face="Verdana, Arial, Helvetica, sans-serif" size="3">French 
+        GIGN </font></div>
+    </td>
+    <td width="160"> 
+      <div align="left"><font color="#FFFFFF" face="Verdana, Arial, Helvetica, sans-serif" size="3">L337 
+        Krew</font></div>
+    </td>
+  </tr>
+  <tr> 
+    <td width="160"> 
+      <div align="right"><font color="#FFFFFF" face="Verdana, Arial, Helvetica, sans-serif" size="3">favourite 
+        map</font></div>
+    </td>
+    <td width="20"><font color="#FFFFFF" face="Verdana, Arial, Helvetica, sans-serif" size="3"></font></td>
+    <td width="160"> 
+      <div align="left"><font color="#FFFFFF" face="Verdana, Arial, Helvetica, sans-serif" size="3">Assault 
+        (yup!) </font></div>
+    </td>
+    <td width="160"> 
+      <div align="left"><font color="#FFFFFF" face="Verdana, Arial, Helvetica, sans-serif" size="3">Dust</font></div>
+    </td>
+  </tr>
+  <tr> 
+    <td width="160"> 
+      <div align="right"><font color="#FFFFFF"><font face="Arial, Helvetica, sans-serif"><font face="Times New Roman, Times, serif"><font face="Courier New, Courier, mono"><font face="Georgia, Times New Roman, Times, serif"><font face="Verdana, Arial, Helvetica, sans-serif"><font face="Verdana, Arial, Helvetica, sans-serif"><font face="Verdana, Arial, Helvetica, sans-serif"><font face="Verdana, Arial, Helvetica, sans-serif"><font face="Verdana, Arial, Helvetica, sans-serif"><font color="#FFFFFF"><font size="3"><font size="3"></font></font></font></font></font></font></font></font></font></font></font></font></font></div>
+    </td>
+    <td colspan="3" height="15"><font color="#FFFFFF" face="Verdana, Arial, Helvetica, sans-serif" size="3"></font></td>
+  </tr>
+  <tr> 
+    <td colspan="3"> 
+      <div align="center"><font size="1" color="#FFFFFF" face="Verdana, Arial, Helvetica, sans-serif">although 
+        CLQ is not quite appropriate for CS</font></div>
+    </td>
+    <td width="160"><font color="#FFFFFF" face="Verdana, Arial, Helvetica, sans-serif" size="1"></font></td>
+  </tr>
+  <tr> 
+    <td width="160"> 
+      <div align="right"><font color="#FFFFFF" face="Verdana, Arial, Helvetica, sans-serif" size="3">CLQ 
+        stats</font></div>
+    </td>
+    <td width="20"><font color="#FFFFFF" face="Verdana, Arial, Helvetica, sans-serif" size="3"></font></td>
+    <td colspan="2"> 
+      <div align="left"><font color="#FFFFFF" face="Verdana, Arial, Helvetica, sans-serif" size="3"><a href="http://www.theclq.com/asp/find.asp?name=%5BKiF%5DAHA">[KiF]AHA</a></font></div>
+    </td>
+  </tr>
+  <tr> 
+    <td width="160"> 
+      <div align="right"><font color="#FFFFFF" face="Verdana, Arial, Helvetica, sans-serif" size="3">CLQ 
+        info-page</font></div>
+    </td>
+    <td width="20"><font color="#FFFFFF" face="Verdana, Arial, Helvetica, sans-serif" size="3"></font></td>
+    <td colspan="2"><font color="#FFFFFF" face="Verdana, Arial, Helvetica, sans-serif" size="3"><a href="http://www.theclq.com/asp/info.asp?pid=6725258">6725258</a></font></td>
+  </tr>
+</table>
+</body>
+</html>

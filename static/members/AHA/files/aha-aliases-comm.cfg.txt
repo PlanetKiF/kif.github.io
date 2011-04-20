@@ -1,0 +1,89 @@
+// aha-aliases-comm.cfg : aliases for in-game communication
+
+// ----------------- radio commands
+
+// standard radio (1)
+alias aha_r_coverme            "radio1; menuselect 1"
+alias aha_r_youtakethepoint    "radio1; menuselect 2"
+alias aha_r_holdthisposition   "radio1; menuselect 3"
+alias aha_r_regroupteam        "radio1; menuselect 4"
+alias aha_r_followme           "radio1; menuselect 5"
+alias aha_r_takingfire         "radio1; menuselect 6"
+
+// group radio (2)
+alias aha_r_gogogo             "radio2; menuselect 1"
+alias aha_r_fallback           "radio2; menuselect 2"
+alias aha_r_sticktogether      "radio2; menuselect 3"
+alias aha_r_getinposition      "radio2; menuselect 4"
+alias aha_r_stormthefront      "radio2; menuselect 5"
+alias aha_r_reportin           "radio2; menuselect 6"
+
+// report radio (3)
+alias aha_r_roger              "radio3; menuselect 1"
+alias aha_r_enemyspotted       "radio3; menuselect 2"
+alias aha_r_needbackup         "radio3; menuselect 3"
+alias aha_r_sectorclear        "radio3; menuselect 4"
+alias aha_r_iminposition       "radio3; menuselect 5"
+alias aha_r_reportingin        "radio3; menuselect 6"
+alias aha_r_shesgonnablow      "radio3; menuselect 7"
+alias aha_r_negative           "radio3; menuselect 8"
+alias aha_r_enemydown          "radio3; menuselect 9"
+
+// ----------------- goodbye switch
+
+alias aha_cr_goodbye_1         "say gacker KRAEH;                   alias aha_cr_goodbye_switch aha_cr_goodbye_2"
+alias aha_cr_goodbye_2         "say so ich G;                       alias aha_cr_goodbye_switch aha_cr_goodbye_3"
+alias aha_cr_goodbye_3         "say farewell;                       alias aha_cr_goodbye_switch aha_cr_goodbye_4"
+alias aha_cr_goodbye_4         "say farewell;                       alias aha_cr_goodbye_switch aha_cr_goodbye_5"
+alias aha_cr_goodbye_5         "say farewell ...;                   alias aha_cr_goodbye_switch aha_cr_goodbye_6"
+alias aha_cr_goodbye_6         "say_team ... and KICK their asses!; alias aha_cr_goodbye_switch aha_cr_goodbye_7"
+alias aha_cr_goodbye_7         "exit" // no reason to switch back
+
+alias aha_cr_goodbye_switch_d  "aha_cr_goodbye_1"
+alias aha_cr_goodbye_switch_r  "alias aha_cr_goodbye_switch aha_cr_goodbye_switch_d"
+
+// ----------------- custom radio to be bound
+
+alias aha_cr_oops              "say_team OOOPS! command cancelled...;                         aha_reset_wcg;      aha_cl"
+
+alias aha_cr_bomb_t            "say_team TEAM: I have the bomb!;                              aha_r_needbackup;   aha_cl"
+alias aha_cr_bomb_ct           "say_team TEAM: The bomb is here!;                             aha_r_reportingin;  aha_cl"
+
+alias aha_cr_hostages_ct       "say_team TEAM: I HAVE HOSTAGES!;                              aha_r_needbackup;   aha_cl"
+alias aha_cr_hostages_t        "say_team TEAM: THE CTs ARE RESCUING HOSTAGES!;                aha_r_gogogo;       aha_cl"
+
+alias aha_cr_guarding_ct_de    "say_team TEAM: I am guarding a bombing place...;              aha_r_iminposition; aha_cl"
+alias aha_cr_guarding_t_cs     "say_team TEAM: I am guarding hostages...;                     aha_r_iminposition; aha_cl"
+
+alias aha_cr_igive             "say_team TEAM: I have spare money... Anyone without a rifle?; aha_r_reportin;     aha_cl"
+alias aha_cr_iwant             "say_team TEAM: I need a rifle... Anyone with spare money?;    aha_r_reportin;     aha_cl"
+
+alias aha_cr_bombplant         "say_team TEAM: I'M PLANTING THE BOMB;                         aha_r_needbackup;   aha_cl"
+alias aha_cr_bombdefuse        "say_team TEAM: I'M DEFUSING THE BOMB;                         aha_r_needbackup;   aha_cl"
+alias aha_cr_bombdrop          "say_team TEAM: I DROPPED THE BOMB. SOMEONE PICK IT UP!;       aha_r_negative;     aha_cl"
+
+alias aha_cr_F4                "say_team TEAM: MAIN ENEMY FORCES SPOTTED!;                    aha_r_enemyspotted; aha_cl"
+
+// ----------------- grenade stuff (called by grenade switch / grenade toggles)
+
+alias aha_cr_throwinghe        "say_team TEAM: I AM GOING TO THROW HE..."
+alias aha_cr_throwinghenow     "say_team TEAM: HE GOING OFF NOW! TAKE COVER!"
+
+alias aha_cr_throwingflash     "say_team TEAM: I AM GOING TO THROW FLASH..."
+alias aha_cr_throwingflashnow  "say_team TEAM: FLASH GOING OFF NOW! COVER YOUR EYES!"
+
+alias aha_cr_throwingsmoke     "say_team TEAM: I AM GOING TO THROW SMOKE..."
+alias aha_cr_throwingsmokenow  "say_team TEAM: SMOKE GOING OFF NOW! HOLD YOUR BREATH!"
+
+// more grenade stuff is commented out because of too much traffic
+
+alias aha_cr_heequipped        "" // "say_team prepared for throwing he ..."
+alias aha_cr_hedisequipped     "" // "say_team he thrown or tucked away"
+
+alias aha_cr_flashequipped     "" // "say_team prepared for throwing flash ..."
+alias aha_cr_flashdisequipped  "" // "say_team flash thrown or tucked away"
+
+alias aha_cr_smokeequipped     "" // "say_team prepared for throwing smoke ..."
+alias aha_cr_smokedisequipped  "" // "say_team smoke thrown or tucked away"
+
+// ---------------------------------- END

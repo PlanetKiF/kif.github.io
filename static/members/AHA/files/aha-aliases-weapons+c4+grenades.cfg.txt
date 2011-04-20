@@ -1,0 +1,86 @@
+// aha-aliases-weapons+c4+grenades.cfg : aliases for weapons, grenades & c4
+
+alias aha_attack_r  "alias +aha_attack +attack; alias -aha_attack -attack; aha_d_modereset"
+
+// ----------------- weapon switch (cycles weapons: knife, secondary, primary)
+
+alias aha_knife            "hud_fastswitch 1; slot3; hud_fastswitch 0; aha_reset_ac4g; alias aha_weapon_switch aha_secondary"
+alias aha_secondary        "hud_fastswitch 1; slot2; hud_fastswitch 0; aha_reset_ac4g; alias aha_weapon_switch aha_primary"
+alias aha_primary          "hud_fastswitch 1; slot1; hud_fastswitch 0; aha_reset_ac4g; alias aha_weapon_switch aha_knife"
+
+alias aha_weapon_switch_r  "aha_knife; aha_secondary; aha_primary"
+
+// ----------------- grenade toggles
+
+// he grenade toggle
+
+alias +aha_he_attack             "+attack; aha_cr_throwinghe"
+alias -aha_he_attack             "aha_cr_throwinghenow; -attack; aha_w3; aha_hegrenade_off; aha_grenade_r"
+
+alias aha_hegrenade_on           "use weapon_hegrenade; alias +aha_attack +aha_he_attack; alias -aha_attack -aha_he_attack; aha_d_heready; aha_cr_heequipped;    alias aha_hegrenade_toggle aha_hegrenade_off"
+alias aha_hegrenade_off          "lastinv;              aha_attack_r;                                                                      aha_cr_hedisequipped; alias aha_hegrenade_toggle aha_hegrenade_on"
+
+alias aha_hegrenade_toggle_d     "aha_hegrenade_on"
+alias aha_hegrenade_toggle_r     "alias aha_hegrenade_toggle aha_hegrenade_toggle_d"
+
+// flash grenade toggle
+
+alias +aha_flash_attack          "+attack; aha_cr_throwingflash"
+alias -aha_flash_attack          "aha_cr_throwingflashnow; -attack; aha_w3; aha_flashgrenade_off; aha_grenade_r"
+
+alias aha_flashgrenade_on        "use weapon_flashbang; alias +aha_attack +aha_flash_attack; alias -aha_attack -aha_flash_attack; aha_d_flashready; aha_cr_flashequipped;    alias aha_flashgrenade_toggle aha_flashgrenade_off"
+alias aha_flashgrenade_off       "lastinv;              aha_attack_r;                                                                               aha_cr_flashdisequipped; alias aha_flashgrenade_toggle aha_flashgrenade_on"
+
+alias aha_flashgrenade_toggle_d  "aha_flashgrenade_on"
+alias aha_flashgrenade_toggle_r  "alias aha_flashgrenade_toggle aha_flashgrenade_toggle_d"
+
+// smoke grenade toggle
+
+alias +aha_smoke_attack          "+attack; aha_cr_throwingsmoke"
+alias -aha_smoke_attack          "aha_cr_throwingsmokenow; -attack; aha_w3; aha_smokegrenade_off; aha_grenade_r"
+
+alias aha_smokegrenade_on        "use weapon_smokegrenade; alias +aha_attack +aha_smoke_attack; alias -aha_attack -aha_smoke_attack; aha_d_smokeready; aha_cr_smokeequipped;    alias aha_smokegrenade_toggle aha_smokegrenade_off"
+alias aha_smokegrenade_off       "lastinv;                 aha_attack_r;                                                                               aha_cr_smokedisequipped; alias aha_smokegrenade_toggle aha_smokegrenade_on"
+
+alias aha_smokegrenade_toggle_d  "aha_smokegrenade_on"
+alias aha_smokegrenade_toggle_r  "alias aha_smokegrenade aha_smokegrenade_toggle_d"
+
+// ----------------- grenade switch (cycles aha-attack + weapon: he, flash, smoke, back)
+
+alias aha_grenade_he                                      "aha_hegrenade_on;    alias aha_grenade_switch aha_grenade_flash"
+alias aha_grenade_flash     "aha_hegrenade_off;    aha_w3; aha_flashgrenade_on; alias aha_grenade_switch aha_grenade_smoke"
+alias aha_grenade_smoke     "aha_flashgrenade_off; aha_w3; aha_smokegrenade_on; alias aha_grenade_switch aha_grenade_off"
+alias aha_grenade_off       "aha_smokegrenade_off;                              alias aha_grenade_switch aha_grenade_he"
+
+alias aha_grenade_switch_d  "aha_grenade_he"
+alias aha_grenade_switch_r  "alias aha_grenade_switch aha_grenade_switch_d"
+
+// ----------------- reset grenades
+
+alias aha_grenade_r  "aha_hegrenade_toggle_r; aha_flashgrenade_toggle_r; aha_smokegrenade_toggle_r; aha_grenade_switch_r; aha_d_grenadereset"
+
+// ----------------- c4 switch (cycles aha-attack: planting, defusing, dropping)
+
+alias +aha_c4_plant    "use weapon_c4; aha_w3; +duck; +attack; aha_cr_bombplant"
+alias -aha_c4_plant    "-attack; -duck; aha_attack_r"
+
+alias +aha_c4_defuse   "+duck; +use;                           aha_cr_bombdefuse"
+alias -aha_c4_defuse   "-use; -duck;    aha_attack_r; aha_c4_switch_r"
+
+alias +aha_c4_drop     "use weapon_c4; aha_w3; drop;           aha_cr_bombdrop"
+alias -aha_c4_drop                     "aha_attack_r; aha_c4_switch_r"
+
+alias aha_c4_plant     "alias +aha_attack +aha_c4_plant;  alias -aha_attack -aha_c4_plant;  aha_d_c4plant;  alias aha_c4_switch aha_c4_defuse"
+alias aha_c4_defuse    "alias +aha_attack +aha_c4_defuse; alias -aha_attack -aha_c4_defuse; aha_d_c4defuse; alias aha_c4_switch aha_c4_drop"
+alias aha_c4_drop      "alias +aha_attack +aha_c4_drop;   alias -aha_attack -aha_c4_drop;   aha_d_c4drop;   alias aha_c4_switch aha_c4_off"
+alias aha_c4_off       "aha_attack_r;                                                                       alias aha_c4_switch aha_c4_plant"
+
+alias aha_c4_switch_d  "aha_c4_plant"
+alias aha_c4_switch_r  "alias aha_c4_switch aha_c4_switch_d; aha_d_c4reset"
+
+// ----------------- reset defaults
+
+alias aha_reset_ac4g             "aha_attack_r; aha_c4_switch_r; aha_grenade_r"
+alias aha_reset_wcg              "aha_weapon_switch_r"
+
+// ---------------------------------- END

@@ -1,0 +1,103 @@
+// aha-bind-combat.cfg : in-game bindings
+
+unbindall
+exec aha-bind-default.cfg
+aha_dv_1
+echo |* y combat
+echo |* x buy
+echo |* c comm
+echo |* v netop
+aha_dv_0
+
+// -----------------
+
+aha_cr_goodbye_switch_r
+
+// -----------------
+
+// talk
+
+bind "q"              "messagemode"
+bind "w"              "messagemode2"
+
+bind "e"              "say lol"
+bind "r"              "say oo-leee"
+bind "t"              "say ba-GAAACK!"
+bind "y"              "say <-- www.planet-kif.de -->"
+
+bind "u"              "aha_cr_oops"
+
+bind "i"              "aha_cr_bomb_t"
+bind "k"              "aha_cr_bomb_ct"
+
+bind "o"              "aha_cr_hostages_t"
+bind "l"              "aha_cr_hostages_ct"
+
+bind "p"              "aha_cr_guarding_t_cs"
+bind ";"              "aha_cr_guarding_ct_de"
+
+bind "["              "aha_cr_igive"
+bind "'"              "aha_cr_iwant"
+
+bind "]"              "aha_cr_goodbye_switch"
+
+bind "F4"             "aha_cr_F4"
+
+// admin
+
+bind "a"              "chooseteam"
+bind "s"              "timeleft"
+
+// hud
+
+bind "d"              "-nvgadjust"
+bind "f"              "nightvision"
+bind "g"              "+nvgadjust"
+
+bind "b"              "adjust_crosshair"
+bind "n"              "aha_radar_toggle"
+bind "m"              "aha_vgui_toggle"
+bind ","              "aha_dv_toggle"
+bind "."              "aha_bob_toggle"
+bind "/"              "aha_reset_hud+move"
+
+// combat
+
+bind "KP_DOWNARROW"   "aha_duck_toggle"
+bind "KP_PGDN"        "aha_walk_toggle"
+bind "KP_SLASH"       "aha_duckjump_toggle"
+
+bind "INS"            "impulse 100"  // light on/off
+bind "DEL"            "+aha_light"
+
+bind "PGDN"           "impulse 201"  // spraypaint
+
+bind "END"            "+reload"
+
+bind "KP_HOME"        "aha_c4_switch"
+
+bind "KP_LEFTARROW"   "aha_grenade_switch"
+bind "KP_5"           "aha_flashgrenade_toggle"
+bind "KP_RIGHTARROW"  "aha_smokegrenade_toggle"
+
+bind "KP_END"         "aha_weapon_switch"
+bind "KP_DEL"         "aha_reset_wcg"
+
+bind "KP_ENTER"       "drop"
+
+bind "UPARROW"        "+forward"
+bind "DOWNARROW"      "+back"
+bind "LEFTARROW"      "+moveleft"
+bind "RIGHTARROW"     "+moveright"
+
+bind "CTRL"           "+aha_jump"
+bind "SHIFT"          "+speed"
+bind "KP_INS"         "+attack2"
+
+bind "MWHEELDOWN"     "invprev"
+bind "MWHEELUP"       "invnext"
+
+bind "MOUSE1"         "+aha_attack"
+bind "MOUSE2"         "+duck"
+
+// ---------------------------------- END

@@ -1,0 +1,94 @@
+<html>
+<head>
+<title>Planet KiF / counter-strike news</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+</head>
+<body bgcolor="#CfCfcf" text="#000000" link="#000000" vlink="#333333" alink="#000000" leftmargin="0" topmargin="0">
+<MOREOVER_CLONE_JAVASCRIPT_START_DO_NOT_DELETE> 
+<SCRIPT LANGUAGE="Javascript">
+  if (early_exit == 0)
+  {
+  var category = ""
+  var numberofarticles = global_article.length
+  var item_spacing = "5"
+  var cluster_bgcolor = "cfcfcf"
+  var cluster_border = "0"
+  var heading_display = "no"
+  var time_display = "Yes"
+  var cell_spacing = "0"
+  var cell_padding = "1"
+  var heading_bgcolor
+  var heading_font
+  var heading_font_size
+  var heading_fgcolor
+  var headline_bgcolor
+  var headline_font
+  var headline_font_size
+  var headline_fgcolor
+  var source_font
+  var source_font_size
+  var source_fgcolor
+  var access_font
+  var access_font_size
+  var access_fgcolor
+  var time_font
+  var time_font_size
+  var time_fgcolor
+  var time = new Array(global_article.length)
+  document.writeln("<CENTER><TABLE BORDER="+cluster_border+" BGCOLOR='#"+cluster_bgcolor+"' CELLPADDING=2 CELLSPACING=0>")
+  for (var counter=0; counter < numberofarticles; counter++)
+    {
+    heading_bgcolor = "cfcfcf"
+    heading_font = "Verdana, Arial,Helvetica, sans-serif"
+    heading_font_size = "-1"
+    heading_fgcolor = "333333"
+    headline_bgcolor = "cfcfcf"
+    headline_font = "Verdana, Arial,Helvetica, sans-serif"
+    headline_font_size = "-1"
+    headline_fgcolor = "111111"
+    source_font = "Verdana, Arial,Helvetica, sans-serif"
+    source_font_size = "-2"
+    source_fgcolor = "aa0000"
+    access_font = "Verdana, Arial,Helvetica, sans-serif"
+    access_font_size = "-2"
+    access_fgcolor = "aa0000"
+    time_font = "Verdana, Arial,Helvetica, sans-serif"
+    time_font_size = "-2"
+    time_fgcolor = "005500"
+    if ((category != global_article[counter].cluster) && (heading_display == "Yes"))
+      {
+      category = global_article[counter].cluster
+      document.writeln("<TR BGCOLOR='#"+heading_bgcolor+"'><TD>")
+      document.writeln("<FONT SIZE="+heading_font_size+" FACE="+heading_font+" COLOR='#"+heading_fgcolor+"'>")
+      document.writeln("<B>"+global_article[counter].cluster+"</B></FONT></TD></TR>")
+      }
+    document.writeln("<TR BGCOLOR='#"+headline_bgcolor+"'><TD><A HREF='http://www.masterbuilder.de/&quot;+global_article[counter].url+&quot;' >")
+    document.writeln("<FONT SIZE="+headline_font_size+" FACE="+headline_font+" COLOR='#"+headline_fgcolor+"'")
+    document.writeln(">"+global_article[counter].headline_text+"...</FONT></A><br>")
+    if ((counter != (global_article.length - 1)) || moreover_text != 1)
+      {
+      document.writeln("<A HREF='http://www.masterbuilder.de/&quot;+global_article[counter].document_url+&quot;' >")
+      document.writeln("<FONT FACE="+source_font+" SIZE="+source_font_size+" COLOR='#"+source_fgcolor+"'>")
+      document.writeln(""+global_article[counter].source+"</FONT></A>&nbsp;&nbsp;")
+      }
+    if (global_article[counter].access_status == "sub" || global_article[counter].access_status == "reg")
+      {
+      document.writeln(" <A HREF='http://www.masterbuilder.de/&quot;+global_article[counter].access_registration+&quot;'>")
+      document.writeln("<FONT FACE="+access_font+" SIZE="+access_font_size)
+      document.writeln(" COLOR='#"+access_fgcolor+"'>"+global_article[counter].access_status+"</FONT></A>&nbsp;&nbsp;")
+      }
+    if (time_display == "Yes")
+      {
+      time[counter] = new Date(global_article[counter].harvest_time)
+      time[counter].setHours(time[counter].getHours() - (time[counter].getTimezoneOffset() / 60 )) // adjust the time to local
+      document.writeln("<FONT FACE="+time_font+" SIZE="+time_font_size+" COLOR='#"+time_fgcolor+"'>")
+      document.writeln(""+time[counter].toString()+"</FONT>")
+      } 
+    document.writeln("</TD></TR><TR BGCOLOR='#"+headline_bgcolor+"'><TD BGCOLOR='#"+headline_bgcolor+"' HEIGHT="+item_spacing+"></TD></TR>")
+    }
+  document.writeln("</TABLE></CENTER></TD></TR></TABLE></CENTER>");
+  } 
+</SCRIPT>
+<MOREOVER_CLONE_JAVASCRIPT_END_DO_NOT_DELETE> 
+</body>
+</html>

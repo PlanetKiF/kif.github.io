@@ -1,0 +1,159 @@
+<html>
+<head>
+<title>Navigation</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<script language="JavaScript">
+<!--
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v3.0
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document); return x;
+}
+
+function MM_nbGroup(event, grpName) { //v3.0
+  var i,img,nbArr,args=MM_nbGroup.arguments;
+  if (event == "init" && args.length > 2) {
+    if ((img = MM_findObj(args[2])) != null && !img.MM_init) {
+      img.MM_init = true; img.MM_up = args[3]; img.MM_dn = img.src;
+      if ((nbArr = document[grpName]) == null) nbArr = document[grpName] = new Array();
+      nbArr[nbArr.length] = img;
+      for (i=4; i < args.length-1; i+=2) if ((img = MM_findObj(args[i])) != null) {
+        if (!img.MM_up) img.MM_up = img.src;
+        img.src = img.MM_dn = args[i+1];
+        nbArr[nbArr.length] = img;
+    } }
+  } else if (event == "over") {
+    document.MM_nbOver = nbArr = new Array();
+    for (i=1; i < args.length-1; i+=3) if ((img = MM_findObj(args[i])) != null) {
+      if (!img.MM_up) img.MM_up = img.src;
+      img.src = (img.MM_dn && args[i+2]) ? args[i+2] : args[i+1];
+      nbArr[nbArr.length] = img;
+    }
+  } else if (event == "out" ) {
+    for (i=0; i < document.MM_nbOver.length; i++) {
+      img = document.MM_nbOver[i]; img.src = (img.MM_dn) ? img.MM_dn : img.MM_up; }
+  } else if (event == "down") {
+    if ((nbArr = document[grpName]) != null)
+      for (i=0; i < nbArr.length; i++) { img=nbArr[i]; img.src = img.MM_up; img.MM_dn = 0; }
+    document[grpName] = nbArr = new Array();
+    for (i=2; i < args.length-1; i+=2) if ((img = MM_findObj(args[i])) != null) {
+      if (!img.MM_up) img.MM_up = img.src;
+      img.src = img.MM_dn = args[i+1];
+      nbArr[nbArr.length] = img;
+  } }
+}
+//-->
+</script>
+</head>
+
+<body bgcolor="#000000" text="#FFFFFF" link="#FFFFFF" vlink="#FFFFFF" alink="#FFFFFF" onLoad="MM_preloadImages('nav/main/intro-down.png','nav/main/intro-over.png','nav/main/welcome-down.png','nav/main/welcome-over.png','nav/main/forum-down.png','nav/main/forum-over.png','nav/main/server-down.png','nav/main/server-over.png','nav/main/social_stuff-down.png','nav/main/social_stuff-over.png','nav/main/banner-down.png','nav/main/banner-over.png','nav/main/important-down.png','nav/main/important-over.png','nav/main/files-down.png','nav/main/files-over.png','nav/main/hymns-down.png','nav/main/hymns-over.png','nav/main/jacky-down.png','nav/main/jacky-over.png','nav/main/joboot-down.png','nav/main/joboot-over.png','nav/main/jagger-down.png','nav/main/jagger-over.png','nav/main/dackel-down.png','nav/main/dackel-over.png','nav/main/hammer-down.png','nav/main/hammer-over.png','nav/main/grendel-down.png','nav/main/grendel-over.png','nav/main/blandi-down.png','nav/main/blandi-over.png','nav/main/aha-down.png','nav/main/aha-over.png','nav/main/j-down.png','nav/main/j-over.png','nav/main/jj-down.png','nav/main/jj-over.png','nav/main/thubba-down.png','nav/main/thubba-over.png','nav/main/charlies_silence-down.png','nav/main/charlies_silence-over.png','nav/main/official_site-down.png','nav/main/official_site-over.png','nav/main/the_clq_stats_site-down.png','nav/main/the_clq_stats_site-over.png','nav/main/pott-down.png','nav/main/pott-over.png','nav/main/friz-down.png','nav/main/friz-over.png','nav/main/schwindlig-down.png','nav/main/schwindlig-over.png','nav/main/howto-down.png','nav/main/howto-over.png')">
+<div align="center">
+  <table border="0" cellpadding="0" cellspacing="0">
+    <tr valign="middle">
+      <td height="25">
+        <div align="left"><font face="Verdana, Arial, Helvetica, sans-serif" size="-7">main</font></div>
+      </td>
+    </tr>
+    <tr>
+      <td><font face="Verdana, Arial, Helvetica, sans-serif" size="-7"><a href="intro.html" onClick="MM_nbGroup('down','group1','intro','nav/main/intro-down.png',1)" onMouseOver="MM_nbGroup('over','intro','nav/main/intro-over.png','nav/main/intro-down.png',1)" onMouseOut="MM_nbGroup('out')" target="mainFrame"><img name="intro" src="nav/main/intro-up.png" border="0" onLoad="" width="47" height="15"></a></font></td>
+    </tr>
+    <tr>
+      <td><font face="Verdana, Arial, Helvetica, sans-serif" size="-7"><a href="welcome.html" target="mainFrame" onClick="MM_nbGroup('down','group1','welcome','nav/main/welcome-down.png',1)" onMouseOver="MM_nbGroup('over','welcome','nav/main/welcome-over.png','nav/main/welcome-down.png',1)" onMouseOut="MM_nbGroup('out')"><img name="welcome" src="nav/main/welcome-up.png" border="0" onLoad=""></a></font></td>
+    </tr>
+    <tr>
+      <td><font face="Verdana, Arial, Helvetica, sans-serif" size="-7"><a href="http://pub33.ezboard.com/bplanetkif" onClick="MM_nbGroup('down','group1','forum','nav/main/forum-down.png',1)" onMouseOver="MM_nbGroup('over','forum','nav/main/forum-over.png','nav/main/forum-down.png',1)" onMouseOut="MM_nbGroup('out')" target="mainFrame"><img name="forum" src="nav/main/forum-up.png" border="0" onLoad="" width="47" height="15"></a></font></td>
+    </tr>
+    <tr>
+      <td><font face="Verdana, Arial, Helvetica, sans-serif" size="-7"><a href="http://clan.gamershome.com/show.php3?user=planetkif" target="mainFrame" onClick="MM_nbGroup('down','group1','server','nav/main/server-down.png',1)" onMouseOver="MM_nbGroup('over','server','nav/main/server-over.png','nav/main/server-down.png',1)" onMouseOut="MM_nbGroup('out')"><img name="server" src="nav/main/server-up.png" border="0" onLoad="" width="47" height="15"></a></font></td>
+    </tr>
+    <tr valign="middle">
+      <td><font face="Verdana, Arial, Helvetica, sans-serif" size="-7"><a href="social/index.html" target="mainFrame" onClick="MM_nbGroup('down','group1','social_stuff','nav/main/social_stuff-down.png',1)" onMouseOver="MM_nbGroup('over','social_stuff','nav/main/social_stuff-over.png','nav/main/social_stuff-down.png',1)" onMouseOut="MM_nbGroup('out')"><img name="social_stuff" src="nav/main/social_stuff-up.png" border="0" onLoad="" width="47" height="25"></a></font></td>
+    </tr>
+    <tr>
+      <td><font face="Verdana, Arial, Helvetica, sans-serif" size="-7"><a href="banner/index.html" onClick="MM_nbGroup('down','group1','banner','nav/main/banner-down.png',1)" onMouseOver="MM_nbGroup('over','banner','nav/main/banner-over.png','nav/main/banner-down.png',1)" onMouseOut="MM_nbGroup('out')" target="mainFrame"><img name="banner" src="nav/main/banner-up.png" border="0" onLoad="" width="47" height="15"></a></font></td>
+    </tr>
+    <tr>
+      <td><font face="Verdana, Arial, Helvetica, sans-serif" size="-7"><a href="important.html" target="mainFrame" onClick="MM_nbGroup('down','group1','important','nav/main/important-down.png',1)" onMouseOver="MM_nbGroup('over','important','nav/main/important-over.png','nav/main/important-down.png',1)" onMouseOut="MM_nbGroup('out')"><img name="important" src="nav/main/important-up.png" border="0" onLoad="" width="47" height="15"></a></font></td>
+    </tr>
+    <tr>
+      <td><font face="Verdana, Arial, Helvetica, sans-serif" size="-7"><a href="files/index.html" target="mainFrame" onClick="MM_nbGroup('down','group1','files','nav/main/files-down.png',1)" onMouseOver="MM_nbGroup('over','files','nav/main/files-over.png','nav/main/files-down.png',1)" onMouseOut="MM_nbGroup('out')"><img name="files" src="nav/main/files-up.png" border="0" onLoad=""></a></font></td>
+    </tr>
+    <tr>
+      <td>
+        <div align="left"><font face="Verdana, Arial, Helvetica, sans-serif" size="-7"><a href="howto/colored_logos/index.html" target="mainFrame" onClick="MM_nbGroup('down','group1','howto','nav/main/howto-down.png',1)" onMouseOver="MM_nbGroup('over','howto','nav/main/howto-over.png','nav/main/howto-down.png',1)" onMouseOut="MM_nbGroup('out')"><img name="howto" src="nav/main/howto-up.png" border="0" onLoad=""></a></font></div>
+      </td>
+    </tr>
+    <tr>
+      <td><font face="Verdana, Arial, Helvetica, sans-serif" size="-7"><a href="hymns/index.html" onClick="MM_nbGroup('down','group1','hymns','nav/main/hymns-down.png',1)" onMouseOver="MM_nbGroup('over','hymns','nav/main/hymns-over.png','nav/main/hymns-down.png',1)" onMouseOut="MM_nbGroup('out')" target="mainFrame"><img name="hymns" src="nav/main/hymns-up.png" border="0" onLoad=""></a></font></td>
+    </tr>
+    <tr>
+      <td><font face="Verdana, Arial, Helvetica, sans-serif" size="-7"><a href="pott/index.html" target="mainFrame" onClick="MM_nbGroup('down','group1','pott','nav/main/pott-down.png',1)" onMouseOver="MM_nbGroup('over','pott','nav/main/pott-over.png','nav/main/pott-down.png',1)" onMouseOut="MM_nbGroup('out')"><img name="pott" src="nav/main/pott-up.png" border="0" onLoad=""></a></font></td>
+    </tr>
+    <tr>
+      <td height="25"><font face="Verdana, Arial, Helvetica, sans-serif" size="-7">members</font></td>
+    </tr>
+    <tr>
+      <td><font face="Verdana, Arial, Helvetica, sans-serif" size="-7"><a href="members/Jacky/index.html" target="mainFrame" onClick="MM_nbGroup('down','group1','jacky','nav/main/jacky-down.png',1)" onMouseOver="MM_nbGroup('over','jacky','nav/main/jacky-over.png','nav/main/jacky-down.png',1)" onMouseOut="MM_nbGroup('out')"><img name="jacky" src="nav/main/jacky-up.png" border="0" onLoad=""></a></font></td>
+    </tr>
+    <tr>
+      <td><font face="Verdana, Arial, Helvetica, sans-serif" size="-7"><a href="members/JoBoot/index.html" target="mainFrame" onClick="MM_nbGroup('down','group1','joboot','nav/main/joboot-down.png',1)" onMouseOver="MM_nbGroup('over','joboot','nav/main/joboot-over.png','nav/main/joboot-down.png',1)" onMouseOut="MM_nbGroup('out')"><img name="joboot" src="nav/main/joboot-up.png" border="0" onLoad=""></a></font></td>
+    </tr>
+    <tr>
+      <td><font face="Verdana, Arial, Helvetica, sans-serif" size="-7"><a href="members/Jagger/index.html" target="mainFrame" onClick="MM_nbGroup('down','group1','jagger','nav/main/jagger-down.png',1)" onMouseOver="MM_nbGroup('over','jagger','nav/main/jagger-over.png','nav/main/jagger-down.png',1)" onMouseOut="MM_nbGroup('out')"><img name="jagger" src="nav/main/jagger-up.png" border="0" onLoad=""></a></font></td>
+    </tr>
+    <tr>
+      <td><font face="Verdana, Arial, Helvetica, sans-serif" size="-7"><a href="members/Dackel/index.html" target="mainFrame" onClick="MM_nbGroup('down','group1','dackel','nav/main/dackel-down.png',1)" onMouseOver="MM_nbGroup('over','dackel','nav/main/dackel-over.png','nav/main/dackel-down.png',1)" onMouseOut="MM_nbGroup('out')"><img name="dackel" src="nav/main/dackel-up.png" border="0" onLoad=""></a></font></td>
+    </tr>
+    <tr>
+      <td><font face="Verdana, Arial, Helvetica, sans-serif" size="-7"><a href="members/Hammer/index.html" target="mainFrame" onClick="MM_nbGroup('down','group1','hammer','nav/main/hammer-down.png',1)" onMouseOver="MM_nbGroup('over','hammer','nav/main/hammer-over.png','nav/main/hammer-down.png',1)" onMouseOut="MM_nbGroup('out')"><img name="hammer" src="nav/main/hammer-up.png" border="0" onLoad=""></a></font></td>
+    </tr>
+    <tr>
+      <td><font face="Verdana, Arial, Helvetica, sans-serif" size="-7"><a href="members/Grendel/index.html" target="mainFrame" onClick="MM_nbGroup('down','group1','grendel','nav/main/grendel-down.png',1)" onMouseOver="MM_nbGroup('over','grendel','nav/main/grendel-over.png','nav/main/grendel-down.png',1)" onMouseOut="MM_nbGroup('out')"><img name="grendel" src="nav/main/grendel-up.png" border="0" onLoad=""></a></font></td>
+    </tr>
+    <tr>
+      <td><font face="Verdana, Arial, Helvetica, sans-serif" size="-7"><a href="members/Blandi/index.html" target="mainFrame" onClick="MM_nbGroup('down','group1','blandi','nav/main/blandi-down.png',1)" onMouseOver="MM_nbGroup('over','blandi','nav/main/blandi-over.png','nav/main/blandi-down.png',1)" onMouseOut="MM_nbGroup('out')"><img name="blandi" src="nav/main/blandi-up.png" border="0" onLoad=""></a></font></td>
+    </tr>
+    <tr>
+      <td><font face="Verdana, Arial, Helvetica, sans-serif" size="-7"><a href="members/AHA/index.html" target="mainFrame" onClick="MM_nbGroup('down','group1','aha','nav/main/aha-down.png',1)" onMouseOver="MM_nbGroup('over','aha','nav/main/aha-over.png','nav/main/aha-down.png',1)" onMouseOut="MM_nbGroup('out')"><img name="aha" src="nav/main/aha-up.png" border="0" onLoad=""></a></font></td>
+    </tr>
+    <tr>
+      <td><font face="Verdana, Arial, Helvetica, sans-serif" size="-7"><a href="members/J/index.html" target="mainFrame" onClick="MM_nbGroup('down','group1','j','nav/main/j-down.png',1)" onMouseOver="MM_nbGroup('over','j','nav/main/j-over.png','nav/main/j-down.png',1)" onMouseOut="MM_nbGroup('out')"><img name="j" src="nav/main/j-up.png" border="0" onLoad=""></a></font></td>
+    </tr>
+    <tr valign="middle">
+      <td>
+        <div align="left"><font face="Verdana, Arial, Helvetica, sans-serif" size="-7"><a href="members/JJ/index.html" target="mainFrame" onClick="MM_nbGroup('down','group1','jj','nav/main/jj-down.png',1)" onMouseOver="MM_nbGroup('over','jj','nav/main/jj-over.png','nav/main/jj-down.png',1)" onMouseOut="MM_nbGroup('out')"><img name="jj" src="nav/main/jj-up.png" border="0" onLoad=""></a></font></div>
+      </td>
+    </tr>
+    <tr valign="middle">
+      <td><font face="Verdana, Arial, Helvetica, sans-serif" size="-7"><a href="members/Thubba/index.html" target="mainFrame" onClick="MM_nbGroup('down','group1','thubba','nav/main/thubba-down.png',1)" onMouseOver="MM_nbGroup('over','thubba','nav/main/thubba-over.png','nav/main/thubba-down.png',1)" onMouseOut="MM_nbGroup('out')"><img name="thubba" src="nav/main/thubba-up.png" border="0" onLoad=""></a></font></td>
+    </tr>
+    <tr valign="middle">
+      <td><font face="Verdana, Arial, Helvetica, sans-serif" size="-7"><a href="members/Charlies_Silence/index.html" target="mainFrame" onClick="MM_nbGroup('down','group1','charlies_silence','nav/main/charlies_silence-down.png',1)" onMouseOver="MM_nbGroup('over','charlies_silence','nav/main/charlies_silence-over.png','nav/main/charlies_silence-down.png',1)" onMouseOut="MM_nbGroup('out')"><img name="charlies_silence" src="nav/main/charlies_silence-up.png" border="0" onLoad=""></a></font></td>
+    </tr>
+    <tr valign="middle">
+      <td><font face="Verdana, Arial, Helvetica, sans-serif" size="-7"><a href="members/Friz/index.html" target="mainFrame" onClick="MM_nbGroup('down','group1','Friz','nav/main/friz-down.png',1)" onMouseOver="MM_nbGroup('over','Friz','nav/main/friz-over.png','nav/main/friz-down.png',1)" onMouseOut="MM_nbGroup('out')"><img name="Friz" src="nav/main/friz-up.png" border="0" onLoad=""></a></font></td>
+    </tr>
+    <tr valign="middle">
+      <td><font face="Verdana, Arial, Helvetica, sans-serif" size="-7"><a href="members/Schwindlig/index.html" target="mainFrame" onClick="MM_nbGroup('down','group1','Schwindlig','nav/main/schwindlig-down.png',1)" onMouseOver="MM_nbGroup('over','Schwindlig','nav/main/schwindlig-over.png','nav/main/schwindlig-down.png',1)" onMouseOut="MM_nbGroup('out')"><img name="Schwindlig" src="nav/main/schwindlig-up.png" border="0" onLoad=""></a></font></td>
+    </tr>
+    <tr>
+      <td height="25"><font face="Verdana, Arial, Helvetica, sans-serif" size="-7">links</font></td>
+    </tr>
+    <tr>
+      <td><font face="Verdana, Arial, Helvetica, sans-serif" size="-7"><a href="http://www.counter-strike.net" target="_top" onClick="MM_nbGroup('down','group1','official_site','nav/main/official_site-down.png',1)" onMouseOver="MM_nbGroup('over','official_site','nav/main/official_site-over.png','nav/main/official_site-down.png',1)" onMouseOut="MM_nbGroup('out')"><img name="official_site" src="nav/main/official_site-up.png" border="0" onLoad=""></a></font></td>
+    </tr>
+    <tr>
+      <td><font face="Verdana, Arial, Helvetica, sans-serif" size="-7"><a href="http://www.theclq.com/asp/clandet.asp?id=38500&amp;gam=750" target="mainFrame" onClick="MM_nbGroup('down','group1','the_clq_stats_site','nav/main/the_clq_stats_site-down.png',1)" onMouseOver="MM_nbGroup('over','the_clq_stats_site','nav/main/the_clq_stats_site-over.png','nav/main/the_clq_stats_site-down.png',1)" onMouseOut="MM_nbGroup('out')"><img name="the_clq_stats_site" src="nav/main/the_clq_stats_site-up.png" border="0" onLoad=""></a></font></td>
+    </tr>
+  </table>
+</div>
+<div align="center"></div>
+</body>
+</html>

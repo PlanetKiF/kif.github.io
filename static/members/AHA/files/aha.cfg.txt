@@ -1,0 +1,166 @@
+// aha.cfg : settings, initialization & execing other cfgs
+
+// ----------------- basic bindings
+
+unbindall
+
+bind "1"     "slot1"
+bind "2"     "slot2"
+bind "3"     "slot3"
+bind "4"     "slot4"
+bind "5"     "slot5"
+bind "6"     "slot6"
+bind "7"     "slot7"
+bind "8"     "slot8"
+bind "9"     "slot9"
+bind "0"     "slot10"
+
+bind "HOME"  "snapshot"
+bind "TAB"   "+showscores"
+
+bind "`"     "toggleconsole"
+bind "~"     "toggleconsole"
+
+bind "q"     "messagemode"
+bind "w"     "messagemode2"
+
+// ---------------------------------- settings
+
+name            "[KiF]AHA"
+
+cl_fixtimerate  "7.5"
+
+// ----------------- mouse
+
+joystick                "0"      //joystick on/off
+
++mlook                           //mouse look on/off
+m_filter                "0"      //mouse filter on/off
+sensitivity             "13.6"   //normal mouse sens.
+zoom_sensitivity_ratio  "1.0"    //normal mouse sens. / zoomed mouse sens.
+m_pitch                 "-0.022"
+m_yaw                   "0.022"
+
+// ----------------- console, hud
+
+contimes              "16"           //how many developer lines
+scr_conspeed          "6000"         //console dropdown speed
+con_color             "255 255 255"  //console font color r g b
+con_notifytime        "3.0"          //sec, wie lange developer 1 stehen bleiben
+scr_centertime        "5.0"          //set how long server messages remain on screen
+hud_fastswitch        "0"            //switch weapons without attack on/off
+hud_centerid          "1"            //center player names on/off
+
+hud_saytext_time      "3.0"          //sec, wie lange texte stehen bleiben
+hud_deathnotice_time  "5.0"          //sec, wie lange death notices stehen bleiben
+hud_drawhistory_time  "3.0"          //set how long HUD item icons remain onscreen
+
+setinfo ghosts        "0"            //geister sehen on/off
+setinfo ah            "0"            //auto hilfe on/off
+setinfo dm            "0"            //
+setinfo vgui_menus    "0"            //vgui on/off
+
+// ----------------- audio
+
+hisound        "0"    //hohe Soundqualität on/off
+loadas8bit     "1"    //soundqualität auf 8bit on/off
+s_a3d          "0"    //A3D support on/off
+s_eax          "0"    //EAX support on/off
+s_reverb       "0"    //Reverb on/off
+bgmvolume      "0"    //CD on/off
+bgmbuffer      "0"    //cd buffer
+volume         "1.0"  //overall volume
+suitvolume     "1.0"  //(radiocommands?)
+_snd_mixahead  "0.1"  //try higher values, when sound gets choppy
+
+// ----------------- net
+
+cl_cmdbackup        "1"  //try to overcome packet loss on/off
+cl_resend           "6"  //number of retries
+
+cl_allowupload      "1"  //decals uploaden on/off
+cl_allowdownload    "1"  //decals maps etc. downloaden on/off
+cl_download_ingame  "1"  //download im spiel on/off
+
+// ----------------- gfx
+
+setinfo "lefthand" "1"   //player model lefthanded/righthanded
+crosshair          "1"   //crosshair on/off
+
+mp_decals          "30"  //number of decals
+max_shells         "1"   //number of shells
+max_smokepuffs     "1"   //number of smokepuffs
+fastsprites        "0"   //0-regular transparent smoke grenade sprites, 1-simple, 2-VERY simple
+violence_ablood    "1"   //blood on/off
+violence_agibs     "1"   //gibs on/off
+violence_hblood    "1"   //more blood on/off
+violence_hgibs     "1"   //more gibs on/off
+
+cl_himodels        "0"   //highq models on/off
+
+r_mmx              "1"   //use mmx unit on/off
+r_dynamic          "1"   //dynamic lighting on/off
+r_mirroralpha      "1"   //reflective textures on/off
+
+gl_playermip       "0"   //GL model render quality : higher -> lower quality 0,1,2
+gl_smoothmodels    "1"   //GL model smoothing on/off
+gl_round_down      "0"   //GL Rundung von Texturen higher -> lower quality
+gl_monolights      "0"   //GL uniform light source w/o shadows on/off
+gl_lightholes      "1"   //GL lightholes on/off
+gl_wateramp        "0"   //GL water waves on/off
+
+gl_keeptjunctions  "0"   //GL ritzen zw. texturen rausrechnen on/off
+gl_clear           "1"   //GL show cracks between textures on/off
+
+gl_spriteblend     "1"   //GL sprite blending on/off
+
+gl_texturemode     "GL_LINEAR_MIPMAP_LINEAR"
+
+gl_dither          "1"   //GL dithering on/off
+gl_ztrick          "1"   //GL do the ztrick on/off
+gl_cull            "1"   //GL render visible objects only on/off
+
+gl_picmip          "0"   //GL render quality higher -> lower quality 0,1,2
+
+vid_d3d            "0"   //d3d on/off (better off when using opengl)
+
+// ----------------- wait + clear menu
+
+alias aha_w2                  "wait; wait"
+alias aha_w3                  "aha_w2; wait"
+alias aha_w4                  "aha_w3; wait"
+alias aha_w5                  "aha_w4; wait"
+alias aha_w6                  "aha_w5; wait"
+alias aha_w7                  "aha_w6; wait"
+alias aha_w8                  "aha_w7; wait"
+
+alias aha_cl                  "slot10; slot10; aha_w6; slot10; slot10"
+
+// ----------------- proxies for switching
+
+alias +aha_attack             "+attack"
+alias -aha_attack             "-attack"
+
+alias +aha_jump               "+jump"
+alias -aha_jump               "-jump"
+
+// ----------------- execing aliases, binds, reset
+
+alias aha_eabc "exec aha-bind-combat.cfg"
+
+exec aha-aliases-dvmsgs.cfg
+exec aha-aliases-comm.cfg
+exec aha-aliases-hud.cfg
+exec aha-aliases-net.cfg
+exec aha-aliases-move+buy.cfg
+exec aha-aliases-weapons+c4+grenades.cfg
+
+aha_eabc
+
+alias aha_reset_hud+move "aha_reset_hud; aha_reset_move"
+
+aha_reset_net
+aha_reset_hud+move
+aha_reset_wcg
+
+// ---------------------------------- END

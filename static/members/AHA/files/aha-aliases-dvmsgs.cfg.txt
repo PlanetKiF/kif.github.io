@@ -1,0 +1,86 @@
+// aha-aliases-dvmsgs : messages from the scripts
+
+alias aha_dv_1            "developer 1"
+alias aha_dv_0            "developer 0"
+
+alias aha_d_dv_on         "aha_dv_1; echo **STATUS** dvmsgs are ON;           aha_dv_0"
+alias aha_d_dv_off        "aha_dv_1; echo **STATUS** dvmsgs are OFF;          aha_dv_0"
+
+alias aha_d_radar_on      "aha_dv_1; echo **STATUS** RADAR is ON;             aha_dv_0"
+alias aha_d_radar_off     "aha_dv_1; echo **STATUS** RADAR is OFF;            aha_dv_0"
+
+alias aha_d_vgui_on       "aha_dv_1; echo **STATUS** VGUI is ON;              aha_dv_0"
+alias aha_d_vgui_off      "aha_dv_1; echo **STATUS** VGUI is OFF;             aha_dv_0"
+
+alias aha_d_bob_on        "aha_dv_1; echo **STATUS** bobbing is ON;           aha_dv_0"
+alias aha_d_bob_off       "aha_dv_1; echo **STATUS** bobbing is OFF;          aha_dv_0"
+
+alias aha_d_duckjump_on   "aha_dv_1; echo **STATUS** duckjump is ON;          aha_dv_0"
+alias aha_d_duckjump_off  "aha_dv_1; echo **STATUS** duckjump is OFF;         aha_dv_0"
+
+alias aha_d_duck_on       "aha_dv_1; echo **STATUS** ducklock is ON;          aha_dv_0"
+alias aha_d_duck_off      "aha_dv_1; echo **STATUS** ducklock is OFF;         aha_dv_0"
+
+alias aha_d_walk_on       "aha_dv_1; echo **STATUS** walklock is ON;          aha_dv_0"
+alias aha_d_walk_off      "aha_dv_1; echo **STATUS** walklock is OFF;         aha_dv_0"
+
+alias aha_d_modereset     "aha_dv_1; echo **STATUS** attack is RESET;         aha_dv_0"
+
+alias aha_d_heready       "aha_dv_1; echo **STATUS** attack is now HE;        aha_dv_0"
+alias aha_d_flashready    "aha_dv_1; echo **STATUS** attack is now FLASH;     aha_dv_0"
+alias aha_d_smokeready    "aha_dv_1; echo **STATUS** attack is now SMOKE;     aha_dv_0"
+
+alias aha_d_grenadereset  "aha_dv_1; echo **STATUS** grenades RESET;          aha_dv_0"
+
+alias aha_d_c4plant       "aha_dv_1; echo **STATUS** attack is now PLANT C4;  aha_dv_0"
+alias aha_d_c4defuse      "aha_dv_1; echo **STATUS** attack is now DEFUSE C4; aha_dv_0"
+alias aha_d_c4drop        "aha_dv_1; echo **STATUS** attack is now DROP C4;   aha_dv_0"
+
+alias aha_d_c4reset       "aha_dv_1; echo **STATUS** c4 switch RESET;         aha_dv_0"
+
+alias aha_d_pl_a          "aha_dv_1; echo **STATUS** pushlatency set to 0;    aha_dv_0"
+alias aha_d_pl_b          "aha_dv_1; echo **STATUS** pushlatency set to -5;   aha_dv_0"
+alias aha_d_pl_c          "aha_dv_1; echo **STATUS** pushlatency set to -10;  aha_dv_0"
+alias aha_d_pl_d          "aha_dv_1; echo **STATUS** pushlatency set to -15;  aha_dv_0"
+alias aha_d_pl_e          "aha_dv_1; echo **STATUS** pushlatency set to -20;  aha_dv_0"
+alias aha_d_pl_0          "aha_dv_1; echo **STATUS** pushlatency set to -25;  aha_dv_0"
+alias aha_d_pl_1          "aha_dv_1; echo **STATUS** pushlatency set to -30;  aha_dv_0"
+alias aha_d_pl_2          "aha_dv_1; echo **STATUS** pushlatency set to -35;  aha_dv_0"
+alias aha_d_pl_3          "aha_dv_1; echo **STATUS** pushlatency set to -40;  aha_dv_0"
+alias aha_d_pl_4          "aha_dv_1; echo **STATUS** pushlatency set to -45;  aha_dv_0"
+alias aha_d_pl_5          "aha_dv_1; echo **STATUS** pushlatency set to -50;  aha_dv_0"
+alias aha_d_pl_6          "aha_dv_1; echo **STATUS** pushlatency set to -55;  aha_dv_0"
+alias aha_d_pl_7          "aha_dv_1; echo **STATUS** pushlatency set to -60;  aha_dv_0"
+alias aha_d_pl_8          "aha_dv_1; echo **STATUS** pushlatency set to -65;  aha_dv_0"
+alias aha_d_pl_9          "aha_dv_1; echo **STATUS** pushlatency set to -70;  aha_dv_0"
+alias aha_d_pl_10         "aha_dv_1; echo **STATUS** pushlatency set to -75;  aha_dv_0"
+alias aha_d_pl_11         "aha_dv_1; echo **STATUS** pushlatency set to -80;  aha_dv_0"
+alias aha_d_pl_12         "aha_dv_1; echo **STATUS** pushlatency set to -85;  aha_dv_0"
+alias aha_d_pl_13         "aha_dv_1; echo **STATUS** pushlatency set to -90;  aha_dv_0"
+alias aha_d_pl_14         "aha_dv_1; echo **STATUS** pushlatency set to -95;  aha_dv_0"
+alias aha_d_pl_15         "aha_dv_1; echo **STATUS** pushlatency set to -100; aha_dv_0"
+
+alias aha_d_fps_0         "aha_dv_1; echo **STATUS** fps_max set to 50;       aha_dv_0"
+alias aha_d_fps_1         "aha_dv_1; echo **STATUS** fps_max set to 52;       aha_dv_0"
+alias aha_d_fps_2         "aha_dv_1; echo **STATUS** fps_max set to 54;       aha_dv_0"
+alias aha_d_fps_3         "aha_dv_1; echo **STATUS** fps_max set to 56;       aha_dv_0"
+alias aha_d_fps_4         "aha_dv_1; echo **STATUS** fps_max set to 58;       aha_dv_0"
+alias aha_d_fps_5         "aha_dv_1; echo **STATUS** fps_max set to 60;       aha_dv_0"
+alias aha_d_fps_6         "aha_dv_1; echo **STATUS** fps_max set to 62;       aha_dv_0"
+alias aha_d_fps_7         "aha_dv_1; echo **STATUS** fps_max set to 64;       aha_dv_0"
+alias aha_d_fps_8         "aha_dv_1; echo **STATUS** fps_max set to 66;       aha_dv_0"
+alias aha_d_fps_9         "aha_dv_1; echo **STATUS** fps_max set to 68;       aha_dv_0"
+alias aha_d_fps_10        "aha_dv_1; echo **STATUS** fps_max set to 70;       aha_dv_0"
+alias aha_d_fps_11        "aha_dv_1; echo **STATUS** fps_max set to 72;       aha_dv_0"
+alias aha_d_fps_12        "aha_dv_1; echo **STATUS** fps_max set to 74;       aha_dv_0"
+alias aha_d_fps_13        "aha_dv_1; echo **STATUS** fps_max set to 76;       aha_dv_0"
+alias aha_d_fps_14        "aha_dv_1; echo **STATUS** fps_max set to 78;       aha_dv_0"
+alias aha_d_fps_15        "aha_dv_1; echo **STATUS** fps_max set to 80;       aha_dv_0"
+
+alias aha_d_netcode_on    "aha_dv_1; echo **STATUS** netcode is ON;           aha_dv_0"
+alias aha_d_netcode_off   "aha_dv_1; echo **STATUS** netcode is OFF;          aha_dv_0"
+
+alias aha_d_connect_isdn  "aha_dv_1; echo **STATUS** connection is ISDN;      aha_dv_0"
+alias aha_d_connect_lan   "aha_dv_1; echo **STATUS** connection is LAN;       aha_dv_0"
+
+// ---------------------------------- END
