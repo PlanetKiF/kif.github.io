@@ -1,13 +1,4 @@
-Google App Engine Version.
+# Planet KiF Hompegae
 
-Der "normale", statische HTML-Baum liegt in 'static'. Auf dem 
-Webspace liegt das vollständige Verzeichnis inkl. der GAE Sachen,
-aktuelle zieht www.planet-kif.de aber das statische HTML direkt an,
-wird also bei 1&1 gehostet und nicht auf der Google App Engine.
-
-
-'app.yaml' - Minimal Konfiguration einer Python GAE
-'main.py' - Startup file der Python Engine, wird aber im aktuellen Stand 
-            nicht benötigt.
-
+The oldschool homepage code of the world's greatest (and nowadays inactive) CS clan!
 
