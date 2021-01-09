@@ -3,21 +3,11 @@
 <TITLE>Planet KiF Intro</TITLE>
 <script language="JavaScript">
 
-function MM_checkPlugin(plgIn, theURL, altURL, autoGo) { //v3.0
-  var ok=false; document.MM_returnValue = false;
-  with (navigator) if (appName.indexOf('Microsoft')==-1) ok=(plugins && plugins[plgIn]);
-  else if (appVersion.indexOf('3.1')==-1) { //not Netscape or Win3.1
-    if (plgIn.indexOf("Flash")!=-1 && window.MM_flash!=null) ok=window.MM_flash;
-    else if (plgIn.indexOf("Director")!=-1 && window.MM_dir!=null) ok=window.MM_dir;
-    else ok=autoGo; }
-  if (!ok) theURL=altURL; if (theURL) window.location=theURL;
-}
-
-</script>
 </HEAD>
-<BODY bgcolor="#CfCfcf" text="#000000" link="#000000" vlink="#333333" alink="#000000" onLoad="MM_checkPlugin('Shockwave Flash','','welcome.html',true);return document.MM_returnValue" leftmargin="0" topmargin="0">
-<embed src="planet-kif.swf" loop=false menu=false salign=T wmode=transparent bgcolor=#CfCfcf width=100% height=100% type="application/x-shockwave-flash"
-pluginspage="http://www.macromedia.com/shockwave/download/index.cgi?P1_Prod_Version=ShockwaveFlash">
-</embed>
+<BODY>
+<script type="text/javascript" src="swf2js.js"></script>
+<script type="text/javascript">
+    swf2js.load('planet-kif.swf');
+</script>
 </BODY>
 </HTML>
