@@ -22,6 +22,7 @@ group :jekyll_plugins do
   #gem "jekyll-analytics" #respects donottrack more than I want to, so I include google analytics on my own.
   gem "jekyll-sitemap"
   gem "jekyll-paginate"
+  gem "jekyll-redirect-from"
 end
 
 # Windows and JRuby does not include zoneinfo files, so bundle the tzinfo-data gem
