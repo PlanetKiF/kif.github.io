@@ -4,7 +4,7 @@
 
 layout: member
 title: Members
-permalink: /
+permalink: /home
 ---
 
 
