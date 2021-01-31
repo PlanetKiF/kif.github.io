@@ -2,9 +2,10 @@
 layout: page
 title: Museum
 heading: Museum
-permalink: /assets/museum
+permalink: /museum
 date: 2020-04-11
 #author: "Michael Wolber"
 ---
 
 ## The KiF Clan, united, will never be defeated!
+<a href="/assets/museum">museum</a>
