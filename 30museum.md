@@ -1,5 +1,5 @@
 ---
-layout: redirect
+layout: page
 title: Museum
 heading: Museum
 permalink: /museum
