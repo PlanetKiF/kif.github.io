@@ -1,5 +1,5 @@
 ---
-#layout: page
+layout: page
 title: Museum
 heading: Museum
 permalink: /museum
