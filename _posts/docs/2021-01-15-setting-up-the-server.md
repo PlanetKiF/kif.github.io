@@ -29,7 +29,7 @@ As a result you will have your very own dedicated CS:GO server.
 
 Additional pre-requisites are
 * you must own a credit card to create an AWS account.
-* you must have a least a passing aquaintance with using a console window (like windows command prompt).
+* you should have a least a passing aquaintance with using a console window (like windows command prompt).
 * you may have to increase the disk size before being able to install CS:GO (see next chapter).
 
 ## Increasing disk space ##
@@ -54,13 +54,20 @@ To be able to use the increased disk space in your server’s file system you al
 Notes
 
 * Your file system should be an ext4 file system as used in the linked text.
-* If after the `resize2fs` command the disk size seems not to be increased reboot the server and check again.
+* If after the `resize2fs` command the disk size seems not to be increased as expected reboot the server and check again.
   
 To reboot the server use
 
 	sudo shutdown -r now
 
 where now shuts down immediately and -r reboots the server. 
+
+
+## Adding a swap file ##
+
+Our severs only has 1 GB of main memory. This currently is sufficient but with Linux there is the danger that the server crashes once it runs out of memory. 
+
+To adress this problem we added a swap file of 1 GB size. This [link](https://linuxbeast.com/tutorials/aws/how-to-add-swap-space-on-ec2-ubuntu-18-04/) explains how to do this.
 
 ## Adding a permanent IP address ##
 
