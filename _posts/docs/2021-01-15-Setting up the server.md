@@ -33,8 +33,10 @@ Additional pre-requisites are
 * you may have to increase the disk size before being able to install CS:GO (see next chapter).
 
 ## Increasing disk space ##
-The above guide will give you an installation which in our case used nearly 29 GB of the server’s initially available 30 GB disk space. This is not enough to install updates or additional maps– and may in the near future not be enough to even install the game. For this reason you **will** have to increase the disk space available. Increasing it to 50 GB should be sufficient. 
-Note: Increasing the disk space will cost you about 0,1 US$ per GB a month. For exact prizing look for Amazon Elastic Block Store (EBS) costs.
+The above guide will give you an installation which in our case used nearly 29 GB of the server’s initially available 30 GB disk space. This is not enough to install updates or additional maps – and may in the near future not be enough to even install the game. For this reason you **will** have to increase the disk space available. Increasing it to 50 GB should be sufficient. 
+
+Note: Increasing the disk space will cost you about 0,1 US$ per GB a month. For exact pricing look for Amazon Elastic Block Store (EBS) costs.
+
 To increase your server’s disk space you have to 
 * add more disk space to the instance
 * assign that disk space to the hard drive’s configuration.
@@ -59,3 +61,21 @@ To reboot the server use
 	sudo shutdown -r now
 
 where now shuts down immediately and -r reboots the server. 
+
+## Adding a permanent IP address ##
+
+Every time you reboot the server it will get a new IP address. If you do not want to tell your friends the new IP after every reboot you should either use a dynamic DNS service or AWS Elastic IP service. 
+
+We decided to use the Elastic IP service because it is so easy to install. 
+
+**Be aware**: the Elastic IP service is only for free as long as the server is running. Once you shut down the server for more than an hour Amazon will charge you for this “unused” address. It's only about 0,1US$ a day but of course this will add up.
+
+In our case as we are using Amazon’s free server it does not matter if we keep the server up 24/7. One we upgrade the server we will have to decide to either pay the price for keeping it running or to pay the fee for a “sleeping” server or to switch to a dynamic DNS.
+
+To activate the Elastic IP address for your server
+
+* In AWS Services select EC2 (dashboard) and in the “Resources” section there should be a listing for “Elastic IPs”. 
+* Click on the link and in the next page select “Allocate Elastic IP address”
+* In the next page just leave everything as it is and click on “Allocate”.
+
+You now have a permanent IP address for your server.
