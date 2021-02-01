@@ -17,8 +17,6 @@ How to manage access to your server and how to start, stop and reboot CS:GO.
 
 
 
-
-
 ## Updating CS:GO ##
 
 To update the game server installation log into the server using ssh and type

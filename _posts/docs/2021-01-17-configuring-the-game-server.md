@@ -1,7 +1,7 @@
 ---
 layout: post
 category: documentation
-title: "Configuring your Game Server"
+title: "Configuring the Game Server"
 date: 2021-01-16
 ---
 
