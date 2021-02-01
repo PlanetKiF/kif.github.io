@@ -1,3 +1,10 @@
+---
+layout: post
+category: documentation
+title: "Setting up the Server"
+date: 2021-01-15
+---
+
 We decided on a server hosted by Amazon Web Services (AWS).
 
 Amazon for a 12 month trial period offers a free server with certain specifications. These are (as the time of writing) (nearly) enough for our purposes. We only had to add additional disk space, as the 30 GB were not sufficient for all the game files. Currently we have upgraded to 60 GB which cost about 3 US$ a month.
