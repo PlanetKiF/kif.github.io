@@ -5,7 +5,7 @@ title: "What's all this then?"
 date: 2021-01-31
 ---
 
-... or: how we decided to host our own public CS:GO Server and what this documentation is about.
+... or how we decided to host our own public CS:GO Server and what this documentation is about.
 
 Somewhen in autumn 2020 after the pandemic had already taken hold of everybody’s (night) life (some of) the old and venerable members of the ancient KiF Clan decided on playing Counter Strike again. 
 
