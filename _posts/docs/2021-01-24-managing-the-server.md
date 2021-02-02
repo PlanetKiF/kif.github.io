@@ -7,6 +7,8 @@ date: 2021-01-24
 
 How to manage access to your server and how to start, stop and reboot CS:GO.
 
+Note: this text refers to an installation as described in "[Setting up the Server]({% post_url 2021-01-27-setting-up-the-server %})". If your server uses different pathnames make sure to adjust the information below accordingly.
+
 
 * Naming (Linux) Server vs. Game Server
 * Access via AWS vs. direct access
