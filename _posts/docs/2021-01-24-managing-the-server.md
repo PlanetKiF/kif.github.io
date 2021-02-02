@@ -23,7 +23,7 @@ To update the game server installation log into the server using ssh and type
 
     steamcmd +login anonymous +force_install_dir ~/csgosv/ +app_update 740 +quit
 
-Note: if you run into a problem check your pathnames and if you have enough free disk space on your server. See [Increasing disk space]({% post_url docs/2021-01-15-setting-up-the-server %}) for more information.
+Note: if you run into a problem check your pathnames and if you have enough free disk space on your server. See [Increasing disk space]({% post_url docs/2021-01-27-setting-up-the-server %}) for more information.
 
 ## Using steamcmd to start / stop / restart the game serer ##
 
