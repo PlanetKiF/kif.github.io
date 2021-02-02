@@ -2,7 +2,7 @@
 layout: post
 category: documentation
 title: "Managing the Server"
-date: 2021-01-16
+date: 2021-01-24
 ---
 
 How to manage access to your server and how to start, stop and reboot CS:GO.

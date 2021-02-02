@@ -2,7 +2,7 @@
 layout: post
 category: documentation
 title: "Setting up the Server"
-date: 2021-01-15
+date: 2021-01-27
 ---
 
 We decided on a server hosted by Amazon Web Services (AWS).

@@ -2,7 +2,7 @@
 layout: post
 category: documentation
 title: "What's all this then?"
-date: 2021-01-10
+date: 2021-01-31
 ---
 
 ... or: how this documentation came about.

@@ -2,7 +2,7 @@
 layout: post
 category: documentation
 title: "Configuring the Game Server"
-date: 2021-01-16
+date: 2021-01-20
 ---
 
 Information on how to configure your GS:GO Game Server.
