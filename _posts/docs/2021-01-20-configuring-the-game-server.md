@@ -7,18 +7,19 @@ date: 2021-01-20
 
 There are more then 3000 variables and commands to configure the client and server behavior  of CS:GO. Here we try to give you a basic understanding of how configuration works, how to find information about configuration and how we configured our server. 
 
-## Where to find information about CS:GO configuration ##
+## Sources of information ##
 
 There is a lot of information to be found on the internet regarding CS:GO configuration. Of course [Valve](https://www.valvesoftware.com/) itself has the "definitive" information for [Advanced Server Configuration](https://developer.valvesoftware.com/wiki/Counter-Strike:_Global_Offensive_Dedicated_Servers#Advanced_Configuration) and [Command Line Options](https://developer.valvesoftware.com/wiki/Command_Line_Options).
 
-We also found [TotalCSGO](https://totalcsgo.com/commands)'s information for [Commands](https://totalcsgo.com/commands) and [Launch Options](https://totalcsgo.com/launch-options) very helpful.
+We also found [TotalCSGO](https://totalcsgo.com/)'s information for [Commands](https://totalcsgo.com/commands) and [Launch Options](https://totalcsgo.com/launch-options) very helpful.
 
 And for nearly all questions you have, Google will be your friend. However, as CS has been around for a long time there is quite a bit of outdated information to be found. So one very useful bit of 
-information we stumbled upon was that CS:GO itself has an in build documentation feature. If you type 
+information we stumbled upon was that CS:GO itself has an in build documentation feature. If you 
+start your CS:GO client, open the developer console and type 
   
     cvarlist log output.txt
 
-into the console you will get a text file with all the vars and commands currently working in your version of CS:GO. You'll find the file in your local CS:GO game directory. 
+you will get a text file with all the vars and commands currently working in your version of CS:GO. You'll find the file in your local CS:GO game directory. 
 
 ## Basic Information ##
 
@@ -57,7 +58,7 @@ But as mentioned there beware of the potential log file size.
 
 ## autoexec.cfg ##
 
-The `autoexec.cfg` is executed once at the startup of the server. It should therefore set the values for variables that are required to run the server (like ).   
+The `autoexec.cfg` is executed once at the startup of the server. It should therefore set the values for variables that are required to run the server like the server's hostname, passwords, Steam account ID and so on.   
 
 Ours looks like this
 
@@ -90,11 +91,11 @@ Ours looks like this
     host_workshop_collection <collection-id>          // Get the latest version of maps in a workshop collection and host them as a maplist.
     workshop_start_map <id-of-first-map-to-play>      // id must fit to a map which is part of the above collection
 
-You will notice that we use a workshop (map) collection for maps. [here]({% post_url 2021-01-16-workshop %}) we explain in detail how to this works. If you do not want to user workshops you can instead use the `map` and the 'mapgroup' commands.
+You will notice that we use a workshop (map) collection for maps. [Here]({% post_url 2021-01-16-workshop %}) we explain in detail how this works. If you do not want to use workshops you can instead use the `map` and the `mapgroup` commands.
 
 ### server.cfg ###
 
-The `server.cfg` is executed whenever a map change occurs. The most interesting commands are now found in the Game Mode Config Files. So our config only contains these lines
+The `server.cfg` is executed whenever a map change occurs. As many values change with regard to the current game mode our version of the config does not contain many values:
 
     mp_endmatch_votenextmap 1                         // Whether or not players vote for the next map at the end of the match when the final scoreboard comes up (Default: 1)
 
@@ -104,10 +105,10 @@ The `server.cfg` is executed whenever a map change occurs. The most interesting 
 
 ### Game Mode Configs ###
 
-In CS:GO each game mode (casual, competitive, deathmatch, ...) has it's own config files. We describe how this works using the game mode "casual". 
+In CS:GO each game mode (casual, competitive, deathmatch, ...) has it's own config files. We describe how this works by using the game mode "casual" as example. 
 
-* The config file `gamemode_casual.cfg` is part of the installation and can be updated by every update of the game files. So do not change anything in this file.
-* Changes need to done in the file  `gamemode_casual_server.cfg`. As this configuration file is executed after every other configuration file (when game mode casual is active) the settings in this file overwrite all settings in all other files. 
+* The config file `gamemode_casual.cfg` is part of the installation and can be overwritten by every update of the game files. So do not change anything in this file.
+* Changes are made in the file  `gamemode_casual_server.cfg`. As this configuration file is executed after every other configuration file (when game mode casual is active) the settings in this file overwrite all settings in all other files. 
 
  
  Our gamemode_casual_server.cfg contains the following settings (they should be pretty self explanatory).
