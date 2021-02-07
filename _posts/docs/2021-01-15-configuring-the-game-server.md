@@ -2,10 +2,11 @@
 layout: post
 category: documentation
 title: "Configuring the Game Server"
-date: 2021-01-20
+author: "Ciske Busch"
+#date: 2021-01-15
 ---
 
-There are more then 3000 variables and commands to configure the client and server behavior  of CS:GO. Here we try to give you a basic understanding of how configuration works, how to find information about configuration and how we configured our server. 
+There are more then 3000 variables and commands to configure the client and server behavior  of CS:GO. Here we try to give you a basic understanding of how configuration works, how to find information about configuration and how we configured our server.
 
 ## Sources of information ##
 
@@ -13,20 +14,20 @@ There is a lot of information to be found on the internet regarding CS:GO config
 
 We also found [TotalCSGO](https://totalcsgo.com/)'s information for [Commands](https://totalcsgo.com/commands) and [Launch Options](https://totalcsgo.com/launch-options) very helpful.
 
-And for nearly all questions you have, Google will be your friend. However, as CS has been around for a long time there is quite a bit of outdated information to be found. So one very useful bit of 
-information we stumbled upon was that CS:GO itself has an in build documentation feature. If you 
-start your CS:GO client, open the developer console and type 
-  
+And for nearly all questions you have, Google will be your friend. However, as CS has been around for a long time there is quite a bit of outdated information to be found. So one very useful bit of
+information we stumbled upon was that CS:GO itself has an in build documentation feature. If you
+start your CS:GO client, open the developer console and type
+
     cvarlist log output.txt
 
-you will get a text file with all the vars and commands currently working in your version of CS:GO. You'll find the file in your local CS:GO game directory. 
+you will get a text file with all the vars and commands currently working in your version of CS:GO. You'll find the file in your local CS:GO game directory.
 
 ## Basic Information ##
 
 GS:GO can be configured using
 - launch commands or options which are executed when starting the game.
 - the `autoexec.cfg` file which is executed when the server is started
-- the `server.cfg` file which is executed when a new map is started 
+- the `server.cfg` file which is executed when a new map is started
 - the `gamemode_xxx.cfg` and `gamemode_xxx_server.cfg` files which are executed when a new map is started (and after the `server.cfg`)
 
 There are of course lots of other files managing the game's behavior but so far we have only changed the bot configuration file `botprofile.db`.
@@ -41,24 +42,24 @@ GS:GO command line options are used whenever you start the game. Pure command li
 
 We currently only use the following options
 
-    -usercon        // enable rcon access 
-    -tickrate 128   // set the server tickrate to 128 (as oposed to 64) 
+    -usercon        // enable rcon access
+    -tickrate 128   // set the server tickrate to 128 (as oposed to 64)
 
 And as a result our start command looks like this:
 
     ~/csgosv/srcds_run -game csgo -usercon -tickrate 128
 
-As described [here]({% post_url 2021-01-24-managing-the-server %}) in some cases you might want to add
+As described [here]({% post_url docs/2021-01-10-managing-the-server %}) in some cases you might want to add
 
-     -condebug      // write the output of the server's console to the file ~/csgosv/csgo/console.log 
+     -condebug      // write the output of the server's console to the file ~/csgosv/csgo/console.log
      -conclearlog   // clear the log file at startup.
 
-But as mentioned there beware of the potential log file size. 
+But as mentioned there beware of the potential log file size.
 
 
 ## autoexec.cfg ##
 
-The `autoexec.cfg` is executed once at the startup of the server. It should therefore set the values for variables that are required to run the server like the server's hostname, passwords, Steam account ID and so on.   
+The `autoexec.cfg` is executed once at the startup of the server. It should therefore set the values for variables that are required to run the server like the server's hostname, passwords, Steam account ID and so on.
 
 Ours looks like this
 
@@ -71,7 +72,7 @@ Ours looks like this
 
     game_mode 0                                       // The current game mode (based on game type). See GameModes.txt. (Default: 0)
     game_type 0                                       // The current game type. See GameModes.txt. (Default: 0)
-    
+
     sv_cheats 0                                       // Allow cheats on server (Default: 0)
     sv_lan 0                                          // Server is a lan server ( no heartbeat, no authentication, no non-class C addresses ) (Default: 0)
     sv_pure 1                                         // if set > 0 the server will ensure that the content (materials, models, and sounds) on client machines matches what is specified.
@@ -81,7 +82,7 @@ Ours looks like this
     sv_damage_print_enable 1                          // Turn this off to disable the player´s damage feed in the console after getting killed. (Default: 1)
     sv_auto_full_alltalk_during_warmup_half_end 1     // When enabled will automatically turn on full all talk mode in warmup, at halftime and at the end of the match (Default: 1)
 
-    
+
     exec banned_user.cfg                              // Load script file containing banned users.
     exec banned_ip.cfg                                // Load script file containing banned user's ips.
 
@@ -91,7 +92,7 @@ Ours looks like this
     host_workshop_collection <collection-id>          // Get the latest version of maps in a workshop collection and host them as a maplist.
     workshop_start_map <id-of-first-map-to-play>      // id must fit to a map which is part of the above collection
 
-You will notice that we use a workshop (map) collection for maps. [Here]({% post_url 2021-01-16-workshop %}) we explain in detail how this works. If you do not want to use workshops you can instead use the `map` and the `mapgroup` commands.
+You will notice that we use a workshop (map) collection for maps. [Here]({% post_url docs/2021-01-20-workshop %}) we explain in detail how this works. If you do not want to use workshops you can instead use the `map` and the `mapgroup` commands.
 
 ### server.cfg ###
 
@@ -105,12 +106,12 @@ The `server.cfg` is executed whenever a map change occurs. As many values change
 
 ### Game Mode Configs ###
 
-In CS:GO each game mode (casual, competitive, deathmatch, ...) has it's own config files. We describe how this works by using the game mode "casual" as example. 
+In CS:GO each game mode (casual, competitive, deathmatch, ...) has it's own config files. We describe how this works by using the game mode "casual" as example.
 
 * The config file `gamemode_casual.cfg` is part of the installation and can be overwritten by every update of the game files. So do not change anything in this file.
-* Changes are made in the file  `gamemode_casual_server.cfg`. As this configuration file is executed after every other configuration file (when game mode casual is active) the settings in this file overwrite all settings in all other files. 
+* Changes are made in the file  `gamemode_casual_server.cfg`. As this configuration file is executed after every other configuration file (when game mode casual is active) the settings in this file overwrite all settings in all other files.
 
- 
+
  Our gamemode_casual_server.cfg contains the following settings (they should be pretty self explanatory).
 
     mp_warmuptime 30                                  // How long the warmup period lasts. Changing this value resets warmup. (Default: 90)
@@ -146,7 +147,7 @@ In CS:GO each game mode (casual, competitive, deathmatch, ...) has it's own conf
     ff_damage_reduction_grenade_self 1                // How much to damage a player does to himself with his own grenade.  Range is from 0 - 1 (with 1 being damage equal to what is do (Default: 0)
     ff_damage_reduction_other 0.4                     // How much to reduce damage done to teammates by things other than bullets and grenades.  Range is from 0 - 1 (with 1 being damag (Default: 0)
     mp_tkpunish 1                                     // Will TK´ers and team damagers be punished in the next round?  {0=no,  1=yes} (Default: 1)
-  
+
 The following turns on the "Kill Cam" which plays a short video of the kill scene from the killer's perspective:
 
     tv_enable 1                                       // Required for kill cam. - Original Helptext: Activates GOTV on server (0=off;1=on;2=on when reserved) (Default: 0)

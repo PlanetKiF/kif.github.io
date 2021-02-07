@@ -2,14 +2,15 @@
 layout: post
 category: documentation
 title: "Managing the Server"
-date: 2021-01-24
+author: "Ciske Busch"
+#date: 2021-01-10
 ---
 
 How to manage access to your server and how to start, stop and reboot CS:GO.
 
 Note:
 
-* This text refers to an installation as described in [Setting up the Server]({% post_url 2021-01-27-setting-up-the-server %}). If your server uses different path names make sure to adjust the information below accordingly.
+* This text refers to an installation as described in [Setting up the Server]({% post_url docs/2021-01-05-setting-up-the-server %}). If your server uses different path names make sure to adjust the information below accordingly.
 
  * When we talk about the "server" we mean the Linux server which is running the CS:GO "game server".
 
@@ -20,7 +21,7 @@ To manage the game server people only need ssh and ftp access to the (Linux) ser
 
 ### Access by ssh ###
 
-If you are on Linux then install OpenSSH (just google it). If you are Windows then use the in build OpenSSH feature. [Setting up the Server]({% post_url 2021-01-27-setting-up-the-server %}) gives you information on how to do that.
+If you are on Linux then install OpenSSH (just google it). If you are Windows then use the in build OpenSSH feature. [Setting up the Server]({% post_url docs/2021-01-05-setting-up-the-server %}) gives you information on how to do that.
 
 To access your server you will need the key file that you got during the server installation. Alternatively you can create new files (e.g. one for each server admin).
 
@@ -90,7 +91,7 @@ If you do not want the game server to restart automatically you also need to kil
 
      killall -9 srcds_Linux srcds_run
 
-Note: If you do not want the game server to be automatically started when rebooting the server you have to remove / comment out the line we added in the crontab (see [Setting up the Server]({% post_url 2021-01-27-setting-up-the-server %})).
+Note: If you do not want the game server to be automatically started when rebooting the server you have to remove / comment out the line we added in the crontab (see [Setting up the Server]({% post_url docs/2021-01-05-setting-up-the-server %})).
 
 Starting the game server manually can be achieved by typing
 
@@ -98,7 +99,7 @@ Starting the game server manually can be achieved by typing
 
 To stop just hit `CTRL-C`.
 
-Command line options are explained [here]({% post_url 2021-01-20-configuring-the-game-server %}).
+Command line options are explained [here]({% post_url docs/2021-01-15-configuring-the-game-server %}).
 
 
 ## Updating the game server ##
@@ -107,7 +108,7 @@ To update the game server installation log into the server using ssh and type
 
     steamcmd +login anonymous +force_install_dir ~/csgosv/ +app_update 740 +quit
 
-Note: if you run into a problem check your path names and if you have enough free disk space on your server. See [Increasing disk space]({% post_url docs/2021-01-27-setting-up-the-server %}) for more information.
+Note: if you run into a problem check your path names and if you have enough free disk space on your server. See [Increasing disk space]({% post_url docs/2021-01-05-setting-up-the-server %}) for more information.
 
 ## CS:GO Logfiles ##
 
@@ -117,7 +118,7 @@ tbd
 
 If you (auto-) start your server using the crontab you won't see any output when logging into the server using ssh. To watch the output you need to activate the logging of the console output and then 'tail' the output to your current window.
 
-To log the server console output into a log file add the following command-line parameters to the game's launch options (see [here]({% post_url 2021-01-20-configuring-the-game-server %}) for more info on that).
+To log the server console output into a log file add the following command-line parameters to the game's launch options (see [here]({% post_url docs/2021-01-15-configuring-the-game-server %}) for more info on that).
 
 * `-condebug` activates the output of the server's console into the file ~/csgosv/csgo/console.log
 * `-conclearlog` clears the log file

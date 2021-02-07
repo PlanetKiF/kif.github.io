@@ -11,9 +11,9 @@ layout: default
 
 
   {% if site.paginate %}
-    {% assign posts = paginator.categories.documentation %}
+    {% assign posts = paginator.categories.documentation | reverse  %}
   {% else %}
-    {% assign posts = site.categories.documentation %}
+    {% assign posts = site.categories.documentation | reverse  %}
   {% endif %}
 
 

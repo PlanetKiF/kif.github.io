@@ -2,7 +2,8 @@
 layout: post
 category: documentation
 title: "Setting up the Server"
-date: 2021-01-27
+author: "Ciske Busch"
+#date: 2021-01-05
 ---
 
 We decided on setting up a server hosted by Amazon Web Services (AWS). This section explains how we did that.
@@ -11,17 +12,17 @@ Amazon for a 12 month trial period offers a free server with certain specificati
 
 ## Basic installation ##
 
-This [link](https://www.reddit.com/r/GlobalOffensive/comments/hro0ct/setting_up_your_own_dedicated_cs_go_community/) takes you to "a step by step guide on How to set up your own dedicated CS: GO community server using AWS for free. Don't worry. It's a noob's guide." 
+This [link](https://www.reddit.com/r/GlobalOffensive/comments/hro0ct/setting_up_your_own_dedicated_cs_go_community/) takes you to "a step by step guide on How to set up your own dedicated CS: GO community server using AWS for free. Don't worry. It's a noob's guide."
 
 It explains in detail
-* the required Pre-requisites for setting up the server 
-* creating a (Ubuntu) linux server using Amazon’s EC2 services 
+* the required Pre-requisites for setting up the server
+* creating a (Ubuntu) linux server using Amazon’s EC2 services
 * logging into that server using ssh
 * installing steam and Counter Strike : Global Operations
 * creating a game token for your dedicated server
 * adding the game to the servers auto start procedure
 
-As a result you will have your very own dedicated CS:GO server. 
+As a result you will have your very own dedicated CS:GO server.
 
 **Attention**: before the steam installation we had to execute the following line to add some missing packages.
 
@@ -34,11 +35,11 @@ Additional pre-requisites are
 * you may have to increase the disk size before being able to install CS:GO (see next chapter).
 
 ## Increasing disk space ##
-The above guide will give you an installation which in our case used nearly 29 GB of the server’s initially available 30 GB disk space. This is not enough to install updates or additional maps – and may in the near future not be enough to even install the game. For this reason you **will** have to increase the disk space available. Increasing it to 50 GB should be sufficient. 
+The above guide will give you an installation which in our case used nearly 29 GB of the server’s initially available 30 GB disk space. This is not enough to install updates or additional maps – and may in the near future not be enough to even install the game. For this reason you **will** have to increase the disk space available. Increasing it to 50 GB should be sufficient.
 
 Note: Increasing the disk space will cost you about 0,1 US$ per GB a month. For exact pricing look for Amazon Elastic Block Store (EBS) costs.
 
-To increase your server’s disk space you have to 
+To increase your server’s disk space you have to
 * add more disk space to the instance
 * assign that disk space to the hard drive’s configuration.
 
@@ -56,25 +57,25 @@ Notes
 
 * Your file system should be an ext4 file system as used in the linked text.
 * If after the `resize2fs` command the disk size seems not to be increased as expected reboot the server and check again.
-  
+
 To reboot the server use
 
 	sudo shutdown -r now
 
-where now shuts down immediately and -r reboots the server. 
+where now shuts down immediately and -r reboots the server.
 
 
 ## Adding a swap file ##
 
-Our severs only has 1 GB of main memory. This currently is sufficient but with Linux there is the danger that the server crashes once it runs out of memory. 
+Our severs only has 1 GB of main memory. This currently is sufficient but with Linux there is the danger that the server crashes once it runs out of memory.
 
 To adress this problem we added a swap file of 1 GB size. This [link](https://linuxbeast.com/tutorials/aws/how-to-add-swap-space-on-ec2-ubuntu-18-04/) explains how to do this.
 
 ## Adding a permanent IP address ##
 
-Every time you reboot the server it will get a new IP address. If you do not want to tell your friends the new IP after every reboot you should either use a dynamic DNS service or AWS Elastic IP service. 
+Every time you reboot the server it will get a new IP address. If you do not want to tell your friends the new IP after every reboot you should either use a dynamic DNS service or AWS Elastic IP service.
 
-We decided to use the Elastic IP service because it is so easy to install. 
+We decided to use the Elastic IP service because it is so easy to install.
 
 **Be aware**: the Elastic IP service is only for free as long as the server is running. Once you shut down the server for more than an hour Amazon will charge you for this “unused” address. It's only about 0,1US$ a day but of course this will add up.
 
@@ -82,7 +83,7 @@ In our case as we are using Amazon’s free server it does not matter if we keep
 
 To activate the Elastic IP address for your server
 
-* In AWS Services select EC2 (dashboard) and in the “Resources” section there should be a listing for “Elastic IPs”. 
+* In AWS Services select EC2 (dashboard) and in the “Resources” section there should be a listing for “Elastic IPs”.
 * Click on the link and in the next page select “Allocate Elastic IP address”
 * In the next page just leave everything as it is and click on “Allocate”.
 

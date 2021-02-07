@@ -10,7 +10,7 @@ layout: default
 
 
   {% if site.paginate %}
-    {% assign posts = paginator.categories.member | reverse%}
+    {% assign posts = paginator.categories.member | reverse %}
   {% else %}
     {% assign posts = site.categories.member | reverse %}
   {% endif %}
