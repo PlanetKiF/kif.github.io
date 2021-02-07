@@ -1,6 +1,6 @@
 ---
 layout: home
-## title: This is Planet KiF the official home of Clan KiF!
+## title: This is Planet KiF - the official home of Clan KiF!
 pagination:
     enabled: true
 ---
@@ -14,7 +14,7 @@ Founded in January of 2000 the clan has now (2021) the bombastic age of 21 years
 
 We lost quite a few guys over the years and the fighters being active today might have problems getting out of the bed without any help. Being around the age of 50 is no fun. _We are the real silverbacks of Counter Strike_.
 
->You may have stumbled upon some players with the a "KiF" prefix ingame and looked for their clan. Yes, there a still some folks active. But probably you are here looking for our famous Counter Strike (server) configuration. See the menu item [Documentation]({% link 10documentation.md %}).
+> You may have stumbled upon some players with the "KiF" prefix ingame and looked for their clan. Yes, there a still some folks active. But probably you are here looking for our famous Counter Strike (server) configuration. See the menu item [Documentation]({% link 10documentation.md %}).
 
 # So what does KiF mean?
 
