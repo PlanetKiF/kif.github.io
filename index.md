@@ -18,7 +18,8 @@ We lost quite a few guys over the years and the fighters being active today migh
 
 # So what does KiF mean?
 
-Well, there are __many__ possibilities.
+We never found out ;-) Well, there are __many__ possibilities.
+
  * Keiner ist feige!
  * Kinder im Ferienlager
  * Knowledge is futile
