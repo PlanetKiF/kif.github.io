@@ -8,7 +8,6 @@ permalink: /members
 ---
 
 
-
 ## The sleeping giants
 
  * Blandi

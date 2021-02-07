@@ -1,10 +1,15 @@
 {
-    "name": "",
-    "short_name": "",
+    "name": "Planet KiF",
+    "short_name": "Planet KiF",
     "icons": [
         {
-            "src": "/android-chrome-144x144.png",
-            "sizes": "144x144",
+            "src": "/android-chrome-192x192.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        },
+        {
+            "src": "/android-chrome-512x512.png",
+            "sizes": "512x512",
             "type": "image/png"
         }
     ],
