@@ -8,3 +8,16 @@ permalink: /members
 ---
 
 
+
+## The sleeping giants
+
+ * Blandi
+ * Fritz
+ * Grendel
+ * Hammer
+ * J
+ * JJ
+ * JoBoot
+ * Schwindlig
+ * Thubba
+
