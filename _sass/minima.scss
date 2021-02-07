@@ -8,17 +8,17 @@ $base-font-size:   16px !default;
 $base-font-weight: 300 !default;
 $small-font-size:  $base-font-size * 0.875 !default;
 $base-line-height: 1.5 !default;
-$background-color: rgb(253, 253, 253) !default;
-$header-background: scale-color(scale-color($background-color, $lightness: -7%), $blue: 35%);
-$code-background: scale-color(scale-color($background-color, $lightness: -3%), $blue: 35%) !default;
+$background-color: rgb(40, 38, 38) !default;
+$header-background: scale-color(scale-color($background-color, $lightness: -70%), $blue: 0%);
+$code-background: scale-color(scale-color($background-color, $lightness: +10%), $blue: 0%) !default;
 $code-font-size: $base-font-size * 0.875 !default;
 
 $spacing-unit:     30px !default;
 
-$text-color:       #222629 !default; //#495057 !default;
+$text-color:       #d3d5d7 !default; //#495057 !default;
 $brand-color:      #2a7ae2 !default;
 
-$grey-color:       #828282 !default;
+$grey-color:       #c2c2c2ef !default;
 $grey-color-light: lighten($grey-color, 40%) !default;
 $grey-color-dark:  darken($grey-color, 25%) !default;
 
