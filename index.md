@@ -4,7 +4,7 @@ layout: home
 pagination:
     enabled: true
 ---
-<h1>This is Planet KiF the official home of Clan KiF!</h1>
+<h1>This is Planet KiF - the official home of Clan KiF!</h1>
 
 Back _then_, we used to say **The greatest clan on earth**. Well, that might had never been really true. But there is a chance that we can legitimately say this nowadays:
 
