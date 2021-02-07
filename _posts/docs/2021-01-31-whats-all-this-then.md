@@ -2,10 +2,10 @@
 layout: post
 category: documentation
 title: "What's all this then?"
-date: 2021-01-10
+date: 2021-01-31
 ---
 
-... or: how this documentation came about.
+... or how we decided to host our own public CS:GO Server and what this documentation is about.
 
 Somewhen in autumn 2020 after the pandemic had already taken hold of everybody’s (night) life (some of) the old and venerable members of the ancient KiF Clan decided on playing Counter Strike again. 
 
@@ -15,6 +15,6 @@ But of course, this is not the most efficient way to host the game. We checked t
 
 And this is the reason why we decided to just rent a publicly available server and host the game for ourselves. 
 
-Most of us have a background in computers (we first met and played during our college days) but we did not have too much experience with hosting a server. So it was lot’s of trial and error, googling around and having slack conversations but we are now at a stage were we run the server with the settings we feel comfortable with. It has bots behaving as they should, workshop integration for all the right maps, and does not cost lots of money. And if it does not work, we know who has to fix it (and so far we have done so).
+Most of us have a background in computers (we first met and played during our college days) but we did not have too much experience with hosting a server. So it was lot’s of trial and error, googling around and having slack conversations but we are now at a stage were we have [set up a public server]({% post_url 2021-01-27-setting-up-the-server %}) running it with a [configuration]({% post_url 2021-01-20-configuring-the-game-server %}) we feel comfortable with. It has bots behaving as they should,  [workshop integration]({% post_url docs/2021-01-16-workshop %}) for all the right maps, and does not cost lots of money. And if it does not work, we know who has to fix it (and so far we have done so).
 
-This documentation’s goal is to help other noobs to easily set up their own public and cheap server by using the documentation we found with the additional advice for all the things we had to figure out by ourselves. 
+This documentation’s goal is to help other noobs to easily set up their own public and cheap (game) server by using the documentation we found with the additional advice for all the things we had to figure out by ourselves. 

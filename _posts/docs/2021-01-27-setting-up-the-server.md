@@ -2,10 +2,10 @@
 layout: post
 category: documentation
 title: "Setting up the Server"
-date: 2021-01-15
+date: 2021-01-27
 ---
 
-We decided on a server hosted by Amazon Web Services (AWS).
+We decided on setting up a server hosted by Amazon Web Services (AWS). This section explains how we did that.
 
 Amazon for a 12 month trial period offers a free server with certain specifications. These are (as the time of writing) (nearly) enough for our purposes. We only had to add additional disk space, as the 30 GB were not sufficient for all the game files. Currently we have upgraded to 60 GB which cost about 3 US$ a month.
 
@@ -30,6 +30,7 @@ As a result you will have your very own dedicated CS:GO server.
 Additional pre-requisites are
 * you must own a credit card to create an AWS account.
 * you should have a least a passing aquaintance with using a console window (like windows command prompt).
+* Instead of installing putty for a ssh connection with Windows 10 you can also use the inbuild OpenSSH client. Head to Settings > Apps and click “Manage optional features” under Apps & features. There you'll either find it is already  installed or you can add it by clicking on "Add a feature". Your %path% variable should then contain something like this `C:\WINDOWS\System32\OpenSSH\`
 * you may have to increase the disk size before being able to install CS:GO (see next chapter).
 
 ## Increasing disk space ##
