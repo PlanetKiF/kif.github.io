@@ -7,7 +7,7 @@ title: Documentation
 permalink: /docs
 ---
 
-<h2>How we run our server at AWS</h2>
+<h2>How we run our _Counter Strike:Global Offensive_ server at AWS</h2>
 
 When we decided to move away from the standard game server hosting companies (because it was'nt working properly anyway) we learnt quite a few things. First of all: we found out that Valve documentation is a shame!
 
