@@ -5,7 +5,39 @@ title: "Helpful Client Scripts"
 #date: 2021-01-25
 ---
 
-The following scripts have been proven useful on the client side
+The following scripts have been proven useful on the client side.
+
+### Basic information regarding client config files ###
+
+The Steam client looks for config files in this folder 
+
+    <Steam>\userdata\<user-id>\730\local\cfg
+
+where `<steam>` denotes the Steam installation folder and `<user-id>` your own Steam user id (typically there is only just on subfolder in `\userdata` so don't worry about it). `730` stands for CS:GO's App-ID. 
+
+The file `config.cfg` is created automatically by the game and should not be edited as changes will be  overwritten. It is however a source of useful information regarding the current configuration and possible key bindings.
+
+The file `autoxec.cfg` will be executed automatically at game start - this is were you should put your custom configuration. I myself prefer to put my configuration in a separate file which in my case is called `dackel.cfg` . By adding the line
+    
+    exec dackel.cfg
+
+to the `autoexec.cfg` this will be loaded at startup as well. But this is for cosmetic reasons only.
+
+Note that you can execute script files anytime by opening the game's console and typing
+
+    exec <config-file-name>
+
+Also I add the following lines at the top of the file: 
+
+    echo ""
+    echo "***********************************************"
+    echo "Executing dackel.cfg v<date-last-edited>" 
+    echo "***********************************************"
+    echo ""
+    
+where `<date-last-edited>` contains you guess what.
+
+This way I can see in the clients console that the file has been executed and also when I last edited it. 
 
 
 ### Fast weapon switches ###
