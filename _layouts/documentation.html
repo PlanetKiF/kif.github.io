@@ -11,9 +11,9 @@ layout: default
 
 
   {% if site.paginate %}
-    {% assign posts = paginator.categories.documentation | reverse  %}
+    {% assign posts = paginator.pages | sort: "order"  %}
   {% else %}
-    {% assign posts = site.categories.documentation | reverse  %}
+    {% assign posts = site.pages | sort: "order"  %}
   {% endif %}
 
 
@@ -21,9 +21,11 @@ layout: default
     {%- if page.list_title -%}
       <h2 class="post-list-heading">{{ page.list_title }}</h2>
     {%- endif -%}
+
     <ul class="post-list">
       {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
       {%- for post in posts -%}
+      {% if post.category == "documentation" %}
       <li>
          <!-- <span class="post-meta">{{ post.date | date: date_format }}</span> -->
         <h3>
@@ -31,11 +33,19 @@ layout: default
             {{ post.title | escape }}
           </a>
         </h3>
+        <div class="row">
+
         {%- if site.show_excerpts -%}
-          {{ post.excerpt }}
+          {% if post.excerpt -%}
+            {{ post.excerpt }}
+          {%- else -%}
+            {% assign excerpt = post.content | split: site.excerpt_separator %}
+            {{ excerpt[0] }}
+          {%- endif -%}
         {%- endif -%}
       </li>
-      {%- endfor -%}
+    {%- endif -%}
+    {%- endfor -%}
     </ul>
 
     {% if site.paginate %}

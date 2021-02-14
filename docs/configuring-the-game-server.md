@@ -3,6 +3,7 @@ layout: post
 category: documentation
 title: "Configuring the Game Server"
 author: "Ciske Busch"
+order: 15
 #date: 2021-01-15
 ---
 
@@ -49,7 +50,7 @@ And as a result our start command looks like this:
 
     ~/csgosv/srcds_run -game csgo -usercon -tickrate 128
 
-As described [here]({% post_url docs/2021-01-10-managing-the-server %}) in some cases you might want to add
+As described [here]({% link docs/managing-the-server.md %}) in some cases you might want to add
 
      -condebug      // write the output of the server's console to the file ~/csgosv/csgo/console.log
      -conclearlog   // clear the log file at startup.
@@ -92,7 +93,7 @@ Ours looks like this
     host_workshop_collection <collection-id>          // Get the latest version of maps in a workshop collection and host them as a maplist.
     workshop_start_map <id-of-first-map-to-play>      // id must fit to a map which is part of the above collection
 
-You will notice that we use a workshop (map) collection for maps. [Here]({% post_url docs/2021-01-20-workshop %}) we explain in detail how this works. If you do not want to use workshops you can instead use the `map` and the `mapgroup` commands.
+You will notice that we use a workshop (map) collection for maps. [Here]({% link docs/workshop.md %}) we explain in detail how this works. If you do not want to use workshops you can instead use the `map` and the `mapgroup` commands.
 
 ### server.cfg ###
 

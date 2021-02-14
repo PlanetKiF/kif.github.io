@@ -3,7 +3,8 @@ layout: post
 category: documentation
 title: "Workshop maps"
 author: "Michael Wolber"
-date: 2021-01-20
+order: 20
+date: 2022-02-03
 ---
 
 We like to play a lot of old school maps and were really happy to find adoptions of them for CS:GO. Rats! 747! Mansion! But how do we get them into today's game infrastructure?
@@ -65,7 +66,7 @@ When using the Workshop Mode you cannot specify the startup map of the server by
 
 The start-map is simply defined by the sequence of maps in your Steam workshop map collection! When in editing mode, you can simply drag&drop the maps to the order you like. The first one is the map the server uses as the startup map.
 
-Or in other word: for as long as there is no manual `changelevel` or mapvote, the server will simply follow the list of maps in your collection.
+Or in other words: for as long as there is no manual `changelevel` or mapvote, the server will simply follow the list of maps in your collection.
 
 ### A thing to take care of
 

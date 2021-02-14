@@ -3,6 +3,7 @@ layout: post
 category: documentation
 title: "Setting up the Server"
 author: "Ciske Busch"
+order: 05
 #date: 2021-01-05
 ---
 

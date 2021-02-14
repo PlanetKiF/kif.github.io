@@ -1,5 +1,7 @@
 ---
 layout: page
+category: navigation
+order: 990
 title: "Privacy"
 heading: "Datenschutzerklärung"
 permalink: /privacy

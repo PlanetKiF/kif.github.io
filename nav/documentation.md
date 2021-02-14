@@ -3,6 +3,8 @@
 # To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
 
 layout: documentation
+category: navigation
+order: 01
 title: Documentation
 permalink: /docs
 ---

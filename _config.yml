@@ -36,6 +36,7 @@ twitter:
     card: summary
 logo: /assets/logo.png
 
+
 social:
     name: Ben Balter
     links:
@@ -48,11 +49,12 @@ social:
 
 # jekyll_analytics:
 #     GoogleAnalytics:          # Add, if you want to track with Google Analytics
-#     id: UA-28222529-1          # Required - replace with your tracking id
+#     id: G-5R8BESM49K          # Required - replace with your tracking id
 #     anonymizeIp: false      # Optional - Default: false - set to true for anonymized tracking
 
 # Build settings
 theme: minima
+page_excerpts: true
 
 plugins:
   - jekyll-feed

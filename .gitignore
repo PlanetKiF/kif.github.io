@@ -13,6 +13,7 @@ Thumbs.db
 tmp/**/*
 
 _site/**/*
+_site
 
 #pycharm host specific
 kif.iws

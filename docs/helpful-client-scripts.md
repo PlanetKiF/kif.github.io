@@ -3,6 +3,7 @@ layout: post
 category: documentation
 title: "Helpful Client Scripts"
 author: "Ciske Busch"
+order: 25
 #date: 2021-01-25
 ---
 

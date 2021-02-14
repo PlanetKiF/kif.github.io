@@ -3,6 +3,8 @@
 # To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
 
 layout: members
+category: navigation
+order: 05
 title: Members
 permalink: /members
 ---

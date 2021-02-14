@@ -1,5 +1,7 @@
 ---
 layout: page
+category: navigation
+order: 995
 heading: Impressum
 title: Imprint
 permalink: /imprint

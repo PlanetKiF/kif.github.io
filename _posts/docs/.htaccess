@@ -1,6 +1,0 @@
-# BEGIN DISABLE HSTS
-<IfModule mod_headers.c>
-Header always set Strict-Transport-Security "max-age=0; includeSubDomains;"
-</IfModule>
-# END DISABLE HSTS
-

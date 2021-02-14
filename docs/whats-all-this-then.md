@@ -3,6 +3,7 @@ layout: post
 category: documentation
 title: "What's all this then?"
 author: "Ciske Busch"
+order: 01
 #date: 2021-01-01
 ---
 
@@ -16,6 +17,6 @@ But of course, this is not the most efficient way to host the game. We checked t
 
 And this is the reason why we decided to just rent a publicly available server and host the game for ourselves.
 
-Most of us have a background in computers (we first met and played during our college days) but we did not have too much experience with hosting a server. So it was lot’s of trial and error, googling around and having slack conversations but we are now at a stage were we have [set up a public server]({% post_url docs/2021-01-05-setting-up-the-server %}) running it with a [configuration]({% post_url docs/2021-01-15-configuring-the-game-server %}) we feel comfortable with. It has bots behaving as they should,  [workshop integration]({% post_url docs/2021-01-20-workshop %}) for all the right maps, and does not cost lots of money. And if it does not work, we know who has to fix it (and so far we have done so).
+Most of us have a background in computers (we first met and played during our college days) but we did not have too much experience with hosting a server. So it was lot’s of trial and error, googling around and having slack conversations but we are now at a stage were we have [set up a public server]({% link docs/setting-up-the-server.md %}) running it with a [configuration]({% link docs/configuring-the-game-server.md %}) we feel comfortable with. It has bots behaving as they should,  [workshop integration]({% link docs/workshop.md %}) for all the right maps, and does not cost lots of money. And if it does not work, we know who has to fix it (and so far we have done so).
 
 This documentation’s goal is to help other noobs to easily set up their own public and cheap (game) server by using the documentation we found with the additional advice for all the things we had to figure out by ourselves.

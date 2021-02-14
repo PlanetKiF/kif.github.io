@@ -1,5 +1,7 @@
 ---
 layout: page
+category: navigation
+order: 10
 title: Museum
 #heading: Museum
 permalink: /museum
