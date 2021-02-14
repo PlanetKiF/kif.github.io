@@ -4,7 +4,7 @@ category: documentation
 title: "Workshop maps"
 author: "Michael Wolber"
 order: 20
-date: 2022-02-03
+date: 2021-02-03
 ---
 
 We like to play a lot of old school maps and were really happy to find adoptions of them for CS:GO. Rats! 747! Mansion! But how do we get them into today's game infrastructure?
