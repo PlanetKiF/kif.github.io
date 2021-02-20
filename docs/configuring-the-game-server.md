@@ -44,11 +44,12 @@ GS:GO command line options are used whenever you start the game. Pure command li
 We currently only use the following options
 
     -usercon        // enable rcon access
-    -tickrate 128   // set the server tickrate to 128 (as oposed to 64)
+    
+Note: at the beginning we also had `-tickrate 128`  as option but found out that this uses significant more computing power on our AWS hosted server without giving a noticeable benefit - so we we deactivated that.
 
 And as a result our start command looks like this:
 
-    ~/csgosv/srcds_run -game csgo -usercon -tickrate 128
+    ~/csgosv/srcds_run -game csgo -usercon 
 
 As described [here]({% link docs/managing-the-server.md %}) in some cases you might want to add
 
