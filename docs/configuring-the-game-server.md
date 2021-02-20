@@ -4,7 +4,7 @@ category: documentation
 title: "Configuring the Game Server"
 author: "Ciske Busch"
 order: 15
-#date: 2021-01-15
+date: 2021-02-15
 ---
 
 There are more then 3000 variables and commands to configure the client and server behavior  of CS:GO. Here we try to give you a basic understanding of how configuration works, how to find information about configuration and how we configured our server.

@@ -4,7 +4,7 @@ category: documentation
 title: "What's all this then?"
 author: "Ciske Busch"
 order: 01
-#date: 2021-01-01
+date: 2021-02-01
 ---
 
 ... or how we decided to host our own public CS:GO Server and what this documentation is about.

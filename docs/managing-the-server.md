@@ -4,7 +4,7 @@ category: documentation
 title: "Managing the Server"
 author: "Ciske Busch"
 order: 10
-#date: 2021-01-10
+date: 2021-02-10
 ---
 
 How to manage access to your server and how to start, stop and reboot CS:GO.

@@ -4,7 +4,7 @@ category: documentation
 title: "Helpful Client Scripts"
 author: "Ciske Busch"
 order: 25
-#date: 2021-01-25
+date: 2021-01-25
 ---
 
 The following scripts have been proven useful on the client side.

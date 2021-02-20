@@ -4,7 +4,7 @@ category: documentation
 title: "Setting up the Server"
 author: "Ciske Busch"
 order: 05
-#date: 2021-01-05
+date: 2021-02-20
 ---
 
 We decided on setting up a server hosted by Amazon Web Services (AWS). This section explains how we did that, what changes we made to the initial setup and how much we are currently paying for it.
