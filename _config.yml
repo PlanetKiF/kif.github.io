@@ -19,50 +19,77 @@
 # in the templates via {{ site.myvariable }}.
 
 title: Planet KiF
-author: The KiF Clan
-email: contact@wlbr.de
+author:
+  name: The KiF Clan
+  email: contact@wlbr.de
 description: >- # this means to ignore newlines until "baseurl:"
   Keiner ist feige!
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://planet-kif.de" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username:
-github_username:  planetkif
-linkedin_username:
-stackoverflow_username:
+#baseurl: "" # the subpath of your site, e.g. /blog
+#url: "https://planet-kif.de" # the base hostname & protocol for your site, e.g. http://example.com
+# Minima date format
+# refer to https://shopify.github.io/liquid/filters/date/ if you want to customize this
+minima:
+  date_format: "%b %-d, %Y"
+  skin: kif
+  # generate social links in footer
+  social_links:
+    #twitter: jekyllrb
+    github:  planetkif
+    # devto: jekyll
+    # dribbble: jekyll
+    # facebook: jekyll
+    # flickr:   jekyll
+    # instagram: jekyll
+    # linkedin: jekyll
+    # pinterest: jekyll
+    # youtube: jekyll
+    # youtube_channel: UC8CXR0-3I70i1tfPg1PAE1g
+    # youtube_channel_name: CloudCannon
+    # telegram: jekyll
+    # googleplus: +jekyll
+    # microdotblog: jekyll
+    # keybase: jekyll
+
+    # Mastodon instances
+    # mastodon:
+    # - username: jekyll
+    #   instance: example.com
+    # - username: jekyll2
+    #   instance: example.com
+
+    # GitLab instances
+    # gitlab:
+    # - username: jekyll
+    #   instance: example.com
+    # - username: jekyll2
+    #   instance: example.com
+
+
+
 google_analytics: G-5R8BESM49K
-show_excerpts: true
-twitter:
-    username:
-    card: summary
 logo: /assets/logo.png
-
-
-social:
-    name: Ben Balter
-    links:
-      - https://github.com/planetkif
-      #- https://www.facebook.com/ben.balter
-      #- https://keybase.io/benbalter
 
 #paginate: 5
 #paginate_path: /page:num/
 
-# jekyll_analytics:
-#     GoogleAnalytics:          # Add, if you want to track with Google Analytics
-#     id: G-5R8BESM49K          # Required - replace with your tracking id
-#     anonymizeIp: false      # Optional - Default: false - set to true for anonymized tracking
+jekyll_analytics:
+     GoogleAnalytics:          # Add, if you want to track with Google Analytics
+     id: G-5R8BESM49K          # Required - replace with your tracking id
+     anonymizeIp: false        # Optional - Default: false - set to true for anonymized tracking
 
 # Build settings
 theme: minima
 page_excerpts: true
+show_excerpts: true
 
 plugins:
   - jekyll-feed
-  #- jekyll-analytics
+  - jekyll-analytics
   - jekyll-sitemap
-  - jekyll-paginate
+  #- jekyll-paginate
   - jemoji
   - jekyll-redirect-from
+  - jekyll-seo-tag
 
 # Exclude from processing.
 # The following items will not be processed, by default.

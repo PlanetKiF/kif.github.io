@@ -9,22 +9,24 @@
       <div class="footer-col footer-col-1">
         <ul class="contact-list">
           <li class="p-name">
-            {%- if site.author -%}
-              {{ site.author | escape }}
+            {%- if site.author.name -%}
+              {{ site.author.name | escape }}
             {%- else -%}
               {{ site.title | escape }}
             {%- endif -%}
             </li>
-            {%- if site.email -%}
-            <li><a class="u-email" href="mailto:{{ site.email }}">{{ site.email }}</a></li>
+            {%- if site.author.email -%}
+            <li><a class="u-email" href="mailto:{{ site.author.email }}">{{ site.author.email }}</a></li>
             {%- endif -%}
         </ul>
       </div>
 
       <div class="footer-col footer-col-2">
-        <span><svg class="svg-icon"><use xlink:href="{{ '/assets/minima-social-icons.svg#rss' | relative_url }}"></use></svg> <a href="{{ "/feed.xml" | relative_url }}">RSS</a></span>
+        <span><svg class="svg-icon"><use xlink:href="{{ '/assets/minima-social-icons.svg#rss' | relative_url }}"></use></svg> <a href="{{ "/feed.xml" | relative_url }}">RSS</a></span><br>
+        <span><svg class="svg-icon"><use xlink:href="{{ '/assets/minima-social-icons.svg#github' | relative_url }}"></use></svg> <a rel="me" href="https://github.com/{{  site.minima.social_links.github | cgi_escape | escape }}" title="{{  site.minima.social_links.github | escape }}">{{  site.minima.social_links.github | cgi_escape | escape }}</a></span>
+        {% comment %}
         {%- include social.html -%}
-
+        {% endcomment %}
       </div>
 
       <div class="footer-col footer-col-3">

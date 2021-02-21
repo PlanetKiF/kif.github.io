@@ -1,0 +1,22 @@
+// Placeholder to allow defining custom styles that override everything else.
+// (Use `_sass/minima/custom-variables.scss` to override variable defaults)
+blockquote {
+  color: $brand-color;
+  border-left: 4px solid $border-color-02;
+  font-size: $base-font-size;
+}
+
+pre,
+code {
+  border: 0px solid $border-color-01;
+  font-size: $base-font-size * 0.875;
+}
+
+.post-content {
+  margin-bottom: $spacing-unit;
+
+  h1, h2, h3 { margin-top: $spacing-unit * 1.2 }
+  h4, h5, h6 { margin-top: $spacing-unit }
+}
+
+
