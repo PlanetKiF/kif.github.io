@@ -6,4 +6,4 @@ description: "KiF Jacky"
 ---
 
 
-Hell yeah, I need to write something cool here.
+Sometimes my son is playing instead of me. No one knows if these are the better or worse of my performances!
