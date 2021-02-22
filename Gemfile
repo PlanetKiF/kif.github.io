@@ -16,7 +16,7 @@ source "https://rubygems.org"
 gem "github-pages", group: :jekyll_plugins
 # If you have any plugins, put them here!
 group :jekyll_plugins do
-  gem "jekyll-feed", "~> 0.12"
+  gem "jekyll-feed"
   gem "jemoji"
   gem "hawkins"   # Livereload. Start jekyll using 'bundle exec jekyll liveserve'
   #gem "jekyll-analytics" #respects donottrack more than I want to, so I include google analytics on my own.

@@ -267,7 +267,7 @@ PLATFORMS
 DEPENDENCIES
   github-pages
   hawkins
-  jekyll-feed (~> 0.12)
+  jekyll-feed
   jekyll-redirect-from
   jekyll-sitemap
   jemoji
