@@ -269,6 +269,7 @@ DEPENDENCIES
   hawkins
   jekyll-feed
   jekyll-redirect-from
+  jekyll-seo-tag
   jekyll-sitemap
   jemoji
   tzinfo (~> 1.2)
