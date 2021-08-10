@@ -1,9 +1,10 @@
 ---
 layout: post
 category: member
-title: "Aha"
-description: "KiF Aha"
+title: "AHA"
+description: "KiF AHA"
 ---
 
-I like camping! In real life.<br>
-Not in the game, I swear!
+![Image](silver_elite.png)
+
+<a href="https://steamcommunity.com/id/realAHA/"><img src="aha_avatar.jpg"/></a>
