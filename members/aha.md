@@ -16,7 +16,7 @@ dreckiger camper
 
 <div style="display: inline-block; text-align: center;">
   <span>competitive rank</span>
-  <br><img src="silver_elite.png">
+  <br><img src="skillgroup5.png">
 </div>
 
 
