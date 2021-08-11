@@ -10,7 +10,7 @@ lang: de_DE
 ---
 
 <div class="responsive-iframe-container">
-  <iframe class="responsive-iframe" src="http://129.159.246.114:8080"></iframe>
+  <iframe class="responsive-iframe" src="https://stats.planet-kif.de"></iframe>
 </div>
 
 
