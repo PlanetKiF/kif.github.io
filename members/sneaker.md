@@ -5,7 +5,7 @@ title: "sneaKer"
 description: "KiF sneaKer"
 ---
 
-
+fulltime nerd
 
 ![Image](95465df891e1f2c1e1245f2cbdfcc92d73c4770f_full.jpg) 
 
