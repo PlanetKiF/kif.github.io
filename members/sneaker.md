@@ -60,6 +60,9 @@ viewmodel_recoil "0";
 </td>
 </tr>
 <tr>
+<th>start parameter</th><td>-w 1280 -h 960 -freq 240 -language English</td>
+</tr>
+<tr>
 <th>cfg</th><td><a href="sneakercfg.zip">download</a></td>
 </tr>
 </table>
