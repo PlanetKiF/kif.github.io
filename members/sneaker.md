@@ -24,19 +24,19 @@ fulltime nerd
 <h2>Gear</h2>
 <table>
 <tr>
-<th>Monitor</th><td><a href="https://amzn.to/3EsSqpi">BenQ ZOWIE XL2540K</a></td>
+<th>Monitor</th><td><a target="_blank" rel="noopener noreferrer" href="https://amzn.to/3EsSqpi">BenQ ZOWIE XL2540K</a></td>
 </tr>
 <tr>
-<th>Mouse</th><td><a href="https://amzn.to/3nLTn5c">Logitech G403 HERO</a></td>
+<th>Mouse</th><td><a target="_blank" rel="noopener noreferrer" href="https://amzn.to/3nLTn5c">Logitech G403 HERO</a></td>
 </tr>
 <tr>
-<th>Mousepad</th><td><a href="https://amzn.to/3w3yI0u">Logitech G640</a></td>
+<th>Mousepad</th><td><a target="_blank" rel="noopener noreferrer" href="https://amzn.to/3w3yI0u">Logitech G640</a></td>
 </tr>
 <tr>
-<th>Keyboard</th><td><a href="https://amzn.to/3EwXusJ">Logitech G910 Orion Spectrum</a></td>
+<th>Keyboard</th><td><a target="_blank" rel="noopener noreferrer" href="https://amzn.to/3EwXusJ">Logitech G910 Orion Spectrum</a></td>
 </tr>
 <tr>
-<th>Headset</th><td><a href="https://amzn.to/3vZUv93">Logitech G PRO X</a></td>
+<th>Headset</th><td><a target="_blank" rel="noopener noreferrer" href="https://amzn.to/3vZUv93">Logitech G PRO X</a></td>
 </tr>
 <tr>
 <th>GPU</th><td>Nvidia RTX 3070 8GB</td>
