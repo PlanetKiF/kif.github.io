@@ -47,3 +47,16 @@ fulltime nerd
 </table>
 
 <h2>Settings</h2>
+<table>
+<tr>
+<th>crosshair code</th><td>CSGO-RUZDc-czaNB-Nyty6-YexDf-7LpYF</td>
+</tr>
+<tr>
+<th>viewmodel</th>
+<td>
+viewmodel_fov "68"; viewmodel_offset_x "2.5"; viewmodel_offset_y "0"; viewmodel_offset_z "-1.5";
+viewmodel_presetpos "3";
+viewmodel_recoil "0";
+</td>
+</tr>
+</table>
