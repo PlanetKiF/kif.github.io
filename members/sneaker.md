@@ -59,4 +59,7 @@ viewmodel_presetpos "3";
 viewmodel_recoil "0";
 </td>
 </tr>
+<tr>
+<th>cfg</th><td><a href="sneakercfg.zip">download</a></td>
+</tr>
 </table>
