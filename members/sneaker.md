@@ -49,7 +49,7 @@ fulltime nerd
 <h2>Settings</h2>
 <table>
 <tr>
-<th>crosshair code</th><td>CSGO-RUZDc-czaNB-Nyty6-YexDf-7LpYF</td>
+<th>crosshair code</th><td>CSGO-LdXHk-hatWX-JjEa8-tuLDN-5tbJD</td>
 </tr>
 <tr>
 <th>viewmodel</th>
