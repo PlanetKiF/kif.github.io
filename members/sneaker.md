@@ -27,7 +27,7 @@ fulltime nerd
 <th>Monitor</th><td><a target="_blank" rel="noopener noreferrer" href="https://amzn.to/3EsSqpi">BenQ ZOWIE XL2540K</a></td>
 </tr>
 <tr>
-<th>Mouse</th><td><a target="_blank" rel="noopener noreferrer" href="https://amzn.to/3nLTn5c">Logitech G403 HERO</a></td>
+<th>Mouse</th><td><a target="_blank" rel="noopener noreferrer" href="https://amzn.to/3ttA4Sl">Logitech G PRO Wireless</a></td>
 </tr>
 <tr>
 <th>Mousepad</th><td><a target="_blank" rel="noopener noreferrer" href="https://amzn.to/3w3yI0u">Logitech G640</a></td>
