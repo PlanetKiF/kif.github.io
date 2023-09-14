@@ -33,6 +33,8 @@ It should load automatically, if it did not try opening the console (ingame) and
 
 ### tbd ###
 
+Comming soon: sample practice cfg for correct local server setup for practicing nades and
+guide howto download and watch demo files from pro and friend matches aka howto stalk correctly ;)
 
 
 Note that you can execute script files anytime by opening the game's console and typing
