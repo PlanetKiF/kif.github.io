@@ -65,4 +65,7 @@ viewmodel_recoil "0";
 <tr>
 <th>cfg</th><td><a href="sneakercfg.zip">download</a></td>
 </tr>
+<tr>
+<th>cfg cs2</th><td><a href="../docs/autoexec.cfg">download</a></td>
+</tr>
 </table>
