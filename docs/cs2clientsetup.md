@@ -24,8 +24,12 @@ Correct: "C:\Program Files (x86)\Steam\steamapps\common\Counter-Strike Global Of
 
 ### sample cfg ###
 
-Download this file and put it into the exact folder mentioned above.
+Download <a href="autoexec.cfg">this</a> file and put it into the exact folder mentioned above.
+Open the file with a texteditor and change the keys for the binds as you like.
+When saving the file with your changes do not change the file extension!
+(if you end up with something like autoexec.cfg.txt it will not work!)
 
+It should load automatically, if it did not try opening the console (ingame) and type exec autoexec.cfg, you then should see the loaded message from within the file.
 
 ### tbd ###
 
