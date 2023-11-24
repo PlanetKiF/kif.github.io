@@ -2,7 +2,7 @@
 layout: post
 category: member
 title: "sneaKer"
-description: "KiF sneaKer"
+description: "sneaKer"
 ---
 
 fulltime nerd
@@ -19,30 +19,31 @@ fulltime nerd
     <li>stopped ~ 2005 (1.6)</li>
     <li>never played cs source</li>
     <li>returned to CS (GO) 2020</li>
+	<li>CS2 since beta</li>
 </ul>
 
 <h2>Gear</h2>
 <table>
 <tr>
-<th>Monitor</th><td><a target="_blank" rel="noopener noreferrer" href="https://amzn.to/3EsSqpi">BenQ ZOWIE XL2540K</a></td>
+<th>Monitor</th><td>BenQ ZOWIE XL2540K</td>
 </tr>
 <tr>
-<th>Mouse</th><td><a target="_blank" rel="noopener noreferrer" href="https://amzn.to/3ttA4Sl">Logitech G PRO Wireless</a></td>
+<th>Mouse</th><td>Logitech G PRO Wireless</td>
 </tr>
 <tr>
-<th>Mousepad</th><td><a target="_blank" rel="noopener noreferrer" href="https://amzn.to/3w3yI0u">Logitech G640</a></td>
+<th>Mousepad</th><td>Logitech G640</td>
 </tr>
 <tr>
-<th>Keyboard</th><td><a target="_blank" rel="noopener noreferrer" href="https://amzn.to/3EwXusJ">Logitech G910 Orion Spectrum</a></td>
+<th>Keyboard</th><td>Logitech G910 Orion Spectrum</td>
 </tr>
 <tr>
-<th>Headset</th><td><a target="_blank" rel="noopener noreferrer" href="https://amzn.to/3vZUv93">Logitech G PRO X</a></td>
+<th>Headset</th><td>Logitech G PRO X</td>
 </tr>
 <tr>
-<th>GPU</th><td>Nvidia RTX 3070 8GB</td>
+<th>GPU</th><td>Gigabyte GeForce RTX 4080 Gaming OC 16GB DDR6X</td>
 </tr>
 <tr>
-<th>CPU</th><td>Intel Core i9-9900K 8x5.0GHz</td>
+<th>CPU</th><td>Intel Core i9-14900K 3,2-6GHz</td>
 </tr>
 </table>
 
@@ -52,18 +53,7 @@ fulltime nerd
 <th>crosshair code</th><td>CSGO-LdXHk-hatWX-JjEa8-tuLDN-5tbJD</td>
 </tr>
 <tr>
-<th>viewmodel</th>
-<td>
-viewmodel_fov "68"; viewmodel_offset_x "2.5"; viewmodel_offset_y "0"; viewmodel_offset_z "-1.5";
-viewmodel_presetpos "3";
-viewmodel_recoil "0";
-</td>
-</tr>
-<tr>
 <th>start parameter</th><td>-w 1280 -h 960 -freq 240 -language English</td>
-</tr>
-<tr>
-<th>cfg</th><td><a href="sneakercfg.zip">download</a></td>
 </tr>
 <tr>
 <th>cfg cs2</th><td><a href="../docs/autoexec.cfg">download</a></td>
