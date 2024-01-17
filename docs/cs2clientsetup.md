@@ -31,12 +31,6 @@ When saving the file with your changes do not change the file extension!
 
 It should load automatically, if it did not try opening the console (ingame) and type exec autoexec.cfg, you then should see the loaded message from within the file.
 
-### tbd ###
-
-Comming soon: sample practice cfg for correct local server setup for practicing nades and
-guide howto download and watch demo files from pro and friend matches aka howto stalk correctly ;)
-
-
 Note that you can execute script files anytime by opening the game's console and typing
 
     exec <config-file-name>
