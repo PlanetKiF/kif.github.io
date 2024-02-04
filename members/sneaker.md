@@ -34,7 +34,7 @@ fulltime nerd
 <th>Mousepad</th><td>Logitech G640</td>
 </tr>
 <tr>
-<th>Keyboard</th><td>Logitech G910 Orion Spectrum</td>
+<th>Keyboard</th><td>Logitech G PRO X TKL</td>
 </tr>
 <tr>
 <th>Headset</th><td>Logitech G PRO X</td>
@@ -50,7 +50,7 @@ fulltime nerd
 <h2>Settings</h2>
 <table>
 <tr>
-<th>crosshair code</th><td>CSGO-LdXHk-hatWX-JjEa8-tuLDN-5tbJD</td>
+<th>crosshair code</th><td>CSGO-ppdWu-aLPfh-AGjZA-kRLcL-HLAfD</td>
 </tr>
 <tr>
 <th>start parameter</th><td>-w 1280 -h 960 -freq 240 -language English</td>
