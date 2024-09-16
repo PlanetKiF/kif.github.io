@@ -5,8 +5,7 @@ title: "sneaKer"
 description: "sneaKer"
 ---
 
-fulltime nerd
-
+der jüngste mit den ältesten witzen ;D
 
 <div style="position: relative; margin: 20px 0 0 -10px; padding: 20px;">
   <div style="position: absolute; top: 0; left: 0; z-index: 1;"><img src="sneaker-frame.png"></div>
